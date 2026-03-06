@@ -1,0 +1,19 @@
+# 복사 후 terraform.tfvars 로 저장하여 사용
+# cp terraform.tfvars.example terraform.tfvars
+
+# AWS (EKS 사용 시)
+# aws_region        = "ap-northeast-2"
+# eks_cluster_name  = "my-eks-cluster"
+
+# kubeconfig 경로 (선택, 비우면 KUBECONFIG 또는 ~/.kube/config 사용)
+# EKS는 먼저: aws eks update-kubeconfig --region <region> --name <cluster>
+# kube_config_path = "~/.kube/config"
+
+# 네임스페이스 (비우면 default)
+# namespace = "willog-demo"
+
+# 배포할 이미지 (비우면 k8s/deployment.yaml 의 image 유지)
+# image = "ghcr.io/your-org/willog-demo:v1"
+
+# Ingress 호스트 (비우면 k8s/ingress.yaml 의 host 유지)
+# ingress_host = "app.example.com"

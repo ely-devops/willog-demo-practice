@@ -15,7 +15,7 @@ Willog SaaS는 반도체, 바이오, 식음료 등 다양한 물류 비즈니스
 
 ```bash
 # 저장소 클론
-cd willog-saas
+cd willog-demo
 
 # 의존성 설치
 npm install
@@ -79,7 +79,7 @@ npm run lint
 ## 폴더 구조
 
 ```
-willog-saas/src/
+willog-demo/src/
 ├── components/           # 재사용 가능한 UI 컴포넌트
 │   ├── common/          # 공통 컴포넌트 (버튼, 모달, 바 등)
 │   ├── layout/          # 레이아웃 컴포넌트 (Header, Sidebar 등)
