@@ -72,6 +72,7 @@ const ROUTE_LINE_COORDS: [number, number][] = [
 ];
 
 // 마커용 좌표 (표준 경도 범위 -180~180) - 외부에서 flyTo 시 사용
+// eslint-disable-next-line react-refresh/only-export-components
 export const MARKER_COORDS = {
   incheon: [126.7, 37.5] as [number, number],
   daejeonToBusan: [126.5, 34.8] as [number, number],   // 대전-부산 중간 구간 (비행기)
@@ -134,6 +135,7 @@ const BIO_ROUTE_LINE_COORDS: [number, number][] = [
 ];
 
 // 바이오 마커용 좌표 (외부에서 flyTo 시 사용)
+// eslint-disable-next-line react-refresh/only-export-components
 export const BIO_MARKER_COORDS = {
   osong: [127.3, 36.6] as [number, number],           // 오송/대한 (출발) - 트럭 + 배 아이콘
   incheonToLax: [180.0, 41.5] as [number, number],    // 인천-LAX 구간 (비행기 아이콘) - 좌표 조정 필요
