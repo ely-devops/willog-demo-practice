@@ -1,0 +1,990 @@
+{
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "confirm": "확인",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "수정",
+    "search": "검색",
+    "keywordSearch": "키워드 검색",
+    "userProfile": "사용자 프로필",
+    "ok": "확인",
+    "reset": "초기화",
+    "submit": "등록",
+    "time": {
+      "minutesAgo": "{{count}}분 전",
+      "hoursAgo": "{{count}}시간 전",
+      "daysAgo": "{{count}}일 전"
+    },
+    "datePicker": {
+      "yearFormat": "{{year}}년",
+      "yearMonthFormat": "{{year}}년 {{month}}월",
+      "selectStartDate": "시작 날짜를 선택하세요",
+      "selectEndDate": "종료 날짜를 선택하세요",
+      "weekdays": ["일", "월", "화", "수", "목", "금", "토"]
+    }
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "auth": {
+    "title": "Willog 로그인",
+    "login": "로그인",
+    "logout": "로그아웃",
+    "email": "이메일",
+    "password": "비밀번호",
+    "emailPlaceholder": "승인된 이메일 ID를 입력하세요.",
+    "passwordPlaceholder": "비밀번호를 입력하세요.",
+    "loginError": "이메일 또는 비밀번호가 일치하지 않습니다.",
+    "resetPassword": "비밀번호를 재설정하세요."
+  },
+  "nav": {
+    "home": "홈",
+    "dashboard": "대시보드",
+    "register": "등록",
+    "management": "관리",
+    "intelligence": "데이터 인텔리전스",
+    "history": "이력 추적",
+    "journeyDetail": "여정 상세",
+    "registerData": "배송 데이터 등록"
+  },
+  "bizCase": {
+    "label": "비즈니스 케이스 선택",
+    "bio": "바이오 콜드체인",
+    "fnb": "식음료 콜드체인",
+    "semicon": "반도체 고가 물류",
+    "general": "일반 화물"
+  },
+  "aiAssistant": {
+    "buttonLabel": "AI 어시스턴트",
+    "tooltipTitle": "새로운 AI 파트너를 만나보세요",
+    "tooltipMessage": "배송 현황 분석이나 리스크 예측을 요청할 수 있습니다.",
+    "confirmButton": "확인",
+    "maximizeButton": "최대화",
+    "settingsButton": "설정",
+    "closeButton": "닫기",
+    "chatHeader": "Min Jun Kim님, 안녕하세요",
+    "chatTitle": "무엇을 도와드릴까요?",
+    "prompt1": "최근 90일 물동량 추이",
+    "prompt2": "최근 1년 품질리스크 고위험 운송건 Top3",
+    "prompt3": "최근 1년 바이오 SLA 미준수 고위험 운송건 Top3",
+    "inputPlaceholder": "원하시는 질문을 입력해 주세요.",
+    "sendButton": "전송",
+    "voiceInput": "음성 입력",
+    "home": "홈",
+    "actions": "조치",
+    "topics": "제안",
+    "save": "저장",
+    "help": "도움말",
+    "recent": "최근",
+    "viewAll": "모두 보기",
+    "minimize": "축소",
+    "attach": "첨부",
+    "historyItem1": "입출고 흐름 기반 창고 활용도 진단",
+    "historyItem2": "재고 관리 시스템 최적화",
+    "historyItem3": "요인별 배송 지연 패턴 탐색",
+    "historyItem4": "계절별 물류 최적화 분석",
+    "historyItem5": "고객 요구에 따른 배송 유연성 개선",
+    "historyItem6": "재고 관리 시스템 자동화 연구",
+    "historyItem7": "물류 비용 절감을 위한 운송 경로",
+    "response": {
+      "title": "최근 90일 물동량 추이",
+      "def1Term": "총 물동량",
+      "def1Desc": "분석 기간 동안 해당 기간 내 운송 상태에 있었던 모든 운송건을 기준으로 유니크하게 집계한 값으로, 각 운송건은 조회 기간 내 포함 여부만 판단하여 1건으로 산정되며, 일자별 체류 일수에 따른 누적 합산 개념은 포함하지 않습니다.",
+      "def2Term": "일 평균 물동량",
+      "def2Desc": "조회 기간 동안 각 일자에 운송 상태였던 운송건 수를 기준으로 산출한 일자별 물동량의 평균 수치입니다.",
+      "def3Term": "출발 운송건",
+      "def3Desc": "해당 일자에 출고(Departure)가 발생한 운송건의 총합입니다.",
+      "kpiTitle": "핵심 지표 요약",
+      "kpiPeriod": "조회 기간: 2025-11-05 ~ 2026-02-02 (90일)",
+      "totalVolume": "총 물동량",
+      "dailyAvg": "일 평균 물동량",
+      "departureShipments": "일 평균 출발 운송건",
+      "trendTitle": "추이 및 변동 분석",
+      "trendSummary": "최근 90일 동안 물동량은 일 평균 180건 내외를 유지했으나, 연말/연초 구간에서 일시적인 증가와 감소 후 회복되는 흐름을 보입니다.",
+      "bullet1": "최대 물동량 (2025-11-14): 195건 - 연말 출고 집중의 영향으로 해석",
+      "bullet2": "최소 물동량 (2026-01-23): 138건 - 연말/연초 휴무일에 따른 출발 감소가 반영된 결과",
+      "bullet3": "회복세: 휴무 이후 정상 영업 재개와 함께 출발 운송건과 물동량은 빠르게 정상 수준으로 회복 중",
+      "chartAlt": "물동량 추이 차트",
+      "periodTitle": "기간별 상세 흐름",
+      "timelineTitle": "추이 인사이트 타임라인",
+      "viewDetails": "자세히 보기",
+      "period": {
+        "increase": "증가 구간",
+        "decrease": "감소 구간",
+        "recovery": "회복 구간"
+      },
+      "periodDate1": "2025.11.05 ~ 2025.11.14",
+      "periodDate2": "2025.11.14 ~ 2026.01.23",
+      "periodDate3": "2026.01.23 ~ 현재",
+      "period1Desc": "연말 출고 증가로 일자별 출발 운송건이 평소 대비 확대되었고, 운송 리드타임의 특성이 반영되며\n운송 중 물동량이 전반적으로 증가하는 흐름이 관측됩니다.",
+      "period2Desc": "연말 연초 휴무 영향으로 신규 출발 운송건이 감소하며 운송 중 물량이 점진적으로 감소하는 추세를 보입니다.",
+      "period3Desc": "휴무 이후 출발 운송건이 정상화되며, 운송 중 물동량 또한 완만하게 회복되어 평균 수준으로 안정화 되는 흐름이 확인됩니다."
+    },
+    "prompt2Response": {
+      "title": "최근 1년 품질리스크 고위험 운송건 Top3",
+      "description": "최근 1년간 운송 이력을 분석한 결과, 특정 단일 구간이 아니라 전체 운송 과정에서의 누적 환경 편차(온도/습도/충격량 등)가 품질 리스크로 이어진 사례가 상대적으로 높게 나타났습니다. 상위 3건 모두 단발성 이벤트가 아닌 운송 전 구간에 걸친 반복적 환경 이탈 패턴이 공통적으로 관측되었습니다.",
+      "overviewTitle": "전체 품질 리스크 발생 현황 요약",
+      "overviewTarget": "분석 대상: 최근 1년간 운송건 전체",
+      "overviewCriteria": "리스크 판단 기준:  온도/습도/충격량/조도 허용 범위 이탈 여부, 반복 발생 패턴, Critical 이벤트 발생 여부",
+      "overviewPerspective": "분석 관점: 단일 이벤트가 아닌 운송 전 과정에 걸친 리스크 누적 및 반복 발생 가능성",
+      "top3Title": "품질 리스크 발생 확률이 높았던 운송건 상위 3건",
+      "table1": {
+        "rank": "순위",
+        "shipmentId": "운송건 ID",
+        "riskScore": "전체 리스크 스코어",
+        "riskType": "주요 리스크 유형",
+        "section": "주요 발생 구간"
+      },
+      "insightTitle": "해석 및 인사이트",
+      "insightBullet1": "상위 3건 모두 단일 구간의 일회성 이벤트가 아닌, 운송 전 과정 또는 특정 전환 구간에서 반복적으로 리스크 요인이 누적된 사례로 확인되었습니다.",
+      "insightBullet2": "리스크 유형은 상이하나, 공통적으로 환경 변화(온도/충격 등)가 단속적으로 발생하며 누적된 패턴을 보였습니다.",
+      "insightBullet3": "이는 품질 리스크가 특정 지점의 사고라기보다, 운송 전반의 관리 일관성 및 구간 전환 시 대응 수준에 따라 발생 확률이 높아질 수 있음을 시사합니다.",
+      "insightBullet4": "본 결과는 AI Agent가 최근 1년 운송 이력을 기반으로 품질 리스크 발생 가능성이 상대적으로 높았던 운송건을 선별한 요약 결과입니다.",
+      "highRiskTitle": "품질 리스크가 가장 높은 운송건의 주요 품질리스크 유발 원인",
+      "mainIssueSubtitle": "주요 이슈",
+      "mainIssueDesc": "본 운송건의 품질 리스크는 운송 구간 전반에서 관측되었으나, 복합 운송 과정 중 환적/해상 구간에 상대적으로 집중되는 양상을 보였습니다.\n\n내륙 차량 구간과 도착 후 보관 구간에서는 특이 이슈 없이 안정적인 운송 상태가 유지된 반면, 부산 터미널–해상–시애틀 터미널 구간에서는 온도 및 충격 이벤트가 반복적으로 발생하며 운송 전반의 리스크 스코어를 상승시키는 주요 요인으로 작용했습니다.",
+      "analysisSubtitle": "분석",
+      "analysisDesc": "특히 해상 운송 구간에서는 장시간 누적된 온도 일탈과 급격한 온도 상승 이벤트가 동시에 관측되었으며, 시애틀 터미널에서는 하역 과정에서의 충격 이벤트가 다발적으로 발생하여 일부 구간에서 Critical 수준의 품질 리스크가 확인되었습니다.\n이는 단순한 외부 환경 요인보다는 해당 구간의 운용 조건 및 프로세스 통제 수준의 한계에 기인한 것으로 해석됩니다.\n\n반면, 출발지 인접 구간과 최종 도착지 구간, 그리고 일부 내륙 운송 단계에서는 일탈 이벤트가 거의 관측되지 않아, 동일 운송건 내에서도 구간별 관리 성숙도에 뚜렷한 편차가 존재함이 확인되었습니다.",
+      "analysisDesc2": "현재 품질 리스크 발생 시 대응시간의 경우 평균 2~4시간이 소요됩니다. 현지 물류센터 및 파트너사의 SLA 기반 경보 확인 및 대응 프로세스 점검이 권고됩니다.",
+      "deviationTitle": "구간 별 일탈횟수",
+      "table2": {
+        "section": "구간",
+        "temperature": "온도",
+        "shock": "충격",
+        "humidity": "습도",
+        "light": "조도"
+      },
+      "seaTempTitle": "해상구간 온도 추이",
+      "seaTempPeriod": "조회 기간: 2025-09-04 00:00:00 ~ 2025-09-05 07:00:00",
+      "graph1Alt": "해상구간 온도 추이 차트",
+      "seaShockTitle": "해상구간 충격량 추이",
+      "seaShockPeriod": "조회 기간: 2025-10-06",
+      "graph2Alt": "해상구간 충격량 추이 차트"
+    },
+    "prompt3Response": {
+      "title": "최근 1년 바이오 SLA 미준수 고위험 운송건 Top3",
+      "statusTitle": "전체 SLA 준수 현황 요약",
+      "statusDesc1": "분석 대상: 최근 1년간 바이오 콜드체인 운송건 전체",
+      "statusDesc2": "SLA 기준: 온도 허용 범위 준수, Critical 이벤트 발생 여부",
+      "top3Title": "SLA 미준수 운송건 중 위험도가 높은 상위 3건",
+      "table": {
+        "rank": "순위",
+        "shipmentId": "운송건 ID",
+        "section": "주요 발생 구간",
+        "issueType": "주요 이슈 유형",
+        "riskBasis": "위험도 판단 근거"
+      },
+      "insightTitle": "해석 및 인사이트",
+      "insightBullet1": "최근 1년간 바이오 운송건의 SLA 준수 현황을 분석한 결과, 전체 운송건의 대다수는 온도/습도 기준을 안정적으로 충족하였으나, 일부 운송건에서 반복적이거나 대응 지연이 수반된 이탈 사례가 확인되었습니다.",
+      "insightBullet2": "SLA 미준수는 전체 운송 과정 전반에 분산되어 나타나기보다는, 특정 구간(특히 야간 내륙/하역)에 집중되는 경향을 보임",
+      "insightBullet3": "위험도가 높은 운송건은 대부분 환경 조건 자체보다 운영 및 대응 프로세스의 한계가 주요 원인으로 작용",
+      "insightBullet4": "본 응답은 AI Agent가 최근 1년 운송 이력을 기준으로 SLA 준수 여부 및 품질 리스크를 요약한 결과입니다. 상세 운송건 선택 시 상세 구간별 이탈 이력과 대응 로그를 함께 확인할 수 있습니다.",
+      "highRiskTitle": "위험도가 가장 높은 운송건의 SLA 미준수 내역",
+      "highRiskIdPrimary": "ID-SC05",
+      "highRiskIdSecondary": "+2",
+      "mainIssueTitle": "주요 이슈",
+      "mainIssueDesc1": "본 운송건에서는 새벽 시간대 미국 내륙 운송 구간에서 온도 일탈이 발생하였으며, 특히 일탈 발생 이후 담당자의 대응까지 소요 시간이 상대적으로 길게 관측되었습니다. 이는 해당 구간에서의 실시간 모니터링 및 알림/대응 체계가 충분히 작동하지 않았을 가능성을 시사하며, 운영 측면에서의 보완 필요성이 확인되었습니다.",
+      "mainIssueDesc2": "특히, 미국 내륙 운송 구간을 제외한 대부분의 운송 단계에서는 온도 일탈 및 SLA 미준수 이벤트가 관측되지 않아, 전반적으로 안정적인 운송 상태가 유지된 것으로 나타났습니다. 이로 인해 동일 운송건 내에서도 구간별 관리 수준의 편차가 존재함이 확인되었습니다.",
+      "analysisTitle": "분석",
+      "analysisDesc": "인천 - LAX 항공 운송 구간은 본 운송건 내에서도 안정적인 운송 환경이 유지되었을 뿐 아니라, 동일 조건의 다른 바이오 콜드체인 운송건에서도 지속적으로 높은 SLA 준수율을 보이는 구간으로 확인되었습니다. 이는 해당 항공 운송 루트가 구조적으로 안정적인 운영 조건과 대응 체계를 갖추고 있음을 의미합니다.",
+      "improvementTitle": "개선 제안",
+      "improvementDesc": "이에 따라, 인천 - LAX 항공 운송 구간의 운영 조건과 모니터링/대응 체계를 온도 일탈이 집중적으로 발생한 미국 내륙 운송 구간의 개선 기준으로 활용하는 것이 운영 효율성과 품질 안정성 측면에서 합리적인 개선 방향으로 판단됩니다.",
+      "tempTrendTitle": "미국내륙 운송구간 온도 추이",
+      "tempTrendPeriod": "조회 기간: 2025-04-06 00:00:00 ~ 2025-04-06 07:00:00",
+      "graph1Alt": "미국내륙 운송구간 온도 추이 차트",
+      "stageScoreTitle": "운송 단계 별 리스크 스코어",
+      "stageScorePeriod": "조회 기간: 2025-04-06 00:00:00 ~ 2025-04-06 07:00:00",
+      "graph2Alt": "운송 단계별 리스크 스코어 차트",
+      "comparisonTitle": "인천 - LAX 항공 vs 주요 구간 평균 리스크 비교",
+      "comparisonDesc": "인천 - LAX 항공 리스크 스코어를 기준으로, 한국 출발 주요 구간(대륙/국가) 항공, 해상 평균 리스크 스코어와 비교합니다.",
+      "comparisonNote": "낮을수록 안정된 수치입니다.",
+      "graph3Alt": "구간 평균 리스크 비교 차트"
+    },
+    "alert": {
+      "analyzing": "내용 분석중",
+      "preparingResponse": "Pallet 10의 온도 상승 감지를 확인하여 적절한 대응 조치를 준비중입니다.",
+      "title": "Pallet 10에서 온도 상승이 감지되었습니다.\n15분 내 8°C 한계치를 초과할 위험이 있습니다.",
+      "description": "현재 Pallet 10의 온도는 5.2°C로 Target(4.0°C)을 1.2°C 초과했으며, 최근 15분 동안 빠르게 상승 중입니다. 온도 안정화를 위해 차량 냉각 시스템 조정과 조기 대응이 필요합니다.",
+      "currentStatus": "현재 상태",
+      "currentTemp": "현재 온도",
+      "currentSpeed": "현재 속도",
+      "tempValue": "5.2°C",
+      "tempDelta": "6.5°C",
+      "speedValue": "68km/h",
+      "speedDelta": "5km/h",
+      "forecastTitle": "예측 및 온도 추이",
+      "forecastDesc": "AI 예측 결과 15분 뒤 한계치인 8°C를 초과할 것으로 예상됩니다. 주요 원인은 냉각 팬 모터의 이상 작동(패턴 매칭 확률 87%)으로 분석됩니다. 방치 시 화물 폐기 위험이 있습니다.",
+      "rcaTitle": "AI 원인 분석",
+      "rcaDesc": "동일 경로의 과거 운송 67건과 112건의 방법 패턴 데이터를 분석한 결과, 현재 상황은 냉각 팬 고장 사례와 87% 일치합니다. 이는 냉각 팬 모터의 이상 작동을 시사합니다.",
+      "rcaTags": {
+        "historical": "과거 여정",
+        "equipment": "장비 패턴",
+        "sensor": "센서 로그"
+      },
+      "rcaCauses": {
+        "powerSupply": "Power supply issue",
+        "coolingFan": "Cooling fan assembly failure",
+        "mainBoard": "Main board damage"
+      },
+      "recommendedTitle": "AI 권장 조치",
+      "recommendedActions": [
+        "차량 냉방 최대 가동 알림 전송 (John Smith)",
+        "차량 속도 감속 요청 (68km/h → 50km/h)",
+        "긴급 상황 담당자 공유 (김철수 외 2명)"
+      ],
+      "recommendedDesc": "온도 상승 속도를 완화하기 위해 차량 냉방 출력을 상향하고 Pallet 10 구간에서 속도를 감속해야 합니다. 지금 자동 조치를 실행하시겠습니까?",
+      "sendNotifications": "3건의 알림 전송",
+      "viewDetailedData": "상세 데이터 보기",
+      "action": {
+        "title": "온도 상승 대응 조치를 실행 중입니다.",
+        "description": "AI Agent가 시스템 제어 권한을 획득하여 냉각 시스템을 조정하고 있습니다.",
+        "realtimeTempTrends": "실시간 온도 추이",
+        "realtimeMonitoringFeed": "실시간 모니터링 피드",
+        "viewDetails": "자세히 보기",
+        "sendingAlerts": "3건의 알림 전송중...",
+        "preparingAction": "조치 실행 준비중...",
+        "completed": "완료",
+        "remaining": "남음",
+        "tasks": {
+          "systemWarning": "시스템 경고 발령 완료",
+          "systemWarningSub": "SMS 완료, 68→50km/h",
+          "driverComm": "드라이버 통신 연결 완료",
+          "driverCommSub": "SMS 완료, 68→50km/h",
+          "speedReduction": "감속 명령 전달 완료",
+          "speedReductionSub": "SMS 완료, 68→50km/h",
+          "sendingAlerts": "알림 전송중 (3건)",
+          "alertSub1": "김철수(드라이버)에게 SMS 전송 완료",
+          "alertSub2": "박영식(운송매니저)에게 App push 전송 완료",
+          "alertSub3": "권준희(품질관리자)에게 Email 전송중",
+          "vehicleSpeed": "차량 속도 감속 확인 (2건)",
+          "targetSpeed": "목표 속도 도달 & 냉각 최대 가동",
+          "targetSpeedSub": "속도 50km/h, 냉각 출력 100% 확인",
+          "tempDrop": "온도 하강 감지 완료"
+        }
+      },
+      "completion": {
+        "title": "5분 15초 만에 정상 범위(4.8°C)로 복구되었습니다.",
+        "description": "7시 01분 30초 부로 상황이 종료되었습니다. 냉각 시스템 최대 가동 및 차량 감속 조치를 통해 온도가 안정화되었으며, 현재 화물은 정상 상태를 유지하고 있습니다. 상세 조치 내역은 하단 보고서에 자동 저장되었습니다.",
+        "resultSummary": "결과 요약",
+        "resultSummaryDesc": "과거 유사 사례 분석 결과, 5분 15초 내 해결된 경우 의약품 품질에 영향이 없었습니다. 현재 온도 이력서가 자동으로 기록되어 품질 보증 문서로 활용됩니다.",
+        "startTemp": "시작 온도",
+        "endTemp": "종료 온도",
+        "duration": "소요 시간",
+        "min": "분",
+        "sec": "초",
+        "followUpActions": "후속 조치",
+        "followUpActionsDesc": "과거 유사 사례 분석 결과, 5분 15초 내 해결된 경우 의약품 품질에 영향이 없었습니다. 현재 온도 이력서가 자동으로 기록되어 품질 보증 문서로 활용됩니다.",
+        "completedActionsAuto": "자동 완료 항목",
+        "upcomingTasks": "예정 항목",
+        "downloadReport": "보고서 다운로드",
+        "scheduled": "예정",
+        "autoTasks": {
+          "eventLog": "이벤트 로그 자동 기록 완료",
+          "eventLogSub": "FDA 21 CFR Part 11 규정 준수, 암호화 저장 완료",
+          "stakeholderAlert": "관계자 알림 발송 완료 (3명)",
+          "stakeholderAlertSub": "실시간 양방향 통신 채널 활성화 (지연시간: 24ms)",
+          "tempHistory": "온도 이력서 업데이트 완료",
+          "tempHistorySub": "차량 제어 유닛(ECU)에 SET_SPEED_LIMIT = 50km/h 명령 패킷 전송 완료"
+        },
+        "scheduledTasks": {
+          "incidentReport": "사고 보고서 생성 중...",
+          "incidentReportSub": "AI 분석 데이터 취합 및 PDF 변환 중",
+          "coolingInspection": "뉴욕 도착 시 냉각 시스템 점검 예약됨",
+          "coolingInspectionSub": "뉴욕 물류 센터 정비팀 배정"
+        }
+      }
+    }
+  },
+  "fileUpload": {
+    "modalTitle": "파일 업로드",
+    "dragDropText": "클릭하거나 파일을 드래그하여 업로드할 수 있습니다.",
+    "bulkUploadHint": "여러 운송 정보를 한번에 등록할 수 있습니다.",
+    "downloadTemplate": "엑셀 템플릿 다운로드",
+    "cautionTitle": "업로드 시 주의사항",
+    "caution1": "관리번호, 도착지, 제품명, 디바이스 S/N는 필수 항목입니다.",
+    "caution2": "템플릿의 열 순서와 형식을 유지해주세요.",
+    "caution3": "중복된 관리번호는 자동으로 건너뜁니다.",
+    "cancelButton": "취소",
+    "submitButton": "저장"
+  },
+  "register": {
+    "title": "배송 데이터 등록",
+    "description": "한 번에 등록 가능한 디바이스 수량은 100대입니다.",
+    "tabs": {
+      "transport": "운송",
+      "road": "차량",
+      "warehouse": "창고"
+    },
+    "status": {
+      "done": "입력 완료",
+      "warning": "주의",
+      "error": "오류"
+    },
+    "actions": {
+      "uploadFile": "파일 업로드",
+      "autoFill": "자동 입력",
+      "columnSettings": "열 설정",
+      "reset": "초기화",
+      "saveDraft": "임시 저장",
+      "submit": "등록하기"
+    },
+    "columns": {
+      "referenceNo": "관리번호",
+      "productName": "제품명",
+      "serialNo": "S/N",
+      "client": "고객사",
+      "destination": "도착지",
+      "temperature": "온도 알람",
+      "humidityAlarm": "습도 알람",
+      "shockAlarm": "충격 알람",
+      "tiltAlarm": "기울기 알람",
+      "doorOpenAlarm": "문열림 알람",
+      "departureTime": "시작 시간",
+      "autoDepart": "자동 출고",
+      "autoArrival": "자동 도착",
+      "transport": "운송수단",
+      "departurePort": "출발항",
+      "arrivalPort": "도착항",
+      "containerNo": "컨테이너 번호",
+      "shipperCode": "선사코드",
+      "memo": "메모"
+    },
+    "modal": {
+      "title": "등록 요약",
+      "registrationComplete": "등록 완료",
+      "deviceRegistration": "디바이스 등록",
+      "containerRegistration": "컨테이너 등록",
+      "distributionByClient": "고객사별 분포",
+      "routeDistribution": "경로별 분포 및 예상 소요",
+      "estimatedHours": "{{hours}}시간 소요 예상",
+      "warnings": "주의사항",
+      "cancel": "취소",
+      "confirm": "등록"
+    },
+    "toast": {
+      "title": "총 {{count}}건의 디바이스가 등록되었습니다.",
+      "message": "이제부터 해당 디바이스들의 운송 데이터를 실시간으로 수집합니다."
+    }
+  },
+  "dashboard": {
+    "title": {
+      "bio": "메디팜 글로벌 대시보드",
+      "fnb": "식음료 콜드체인",
+      "semicon": "테크코어 시스템 대시보드",
+      "general": "일반 화물"
+    },
+    "lastUpdated": "최근 업데이트 {{time}}",
+    "editDashboard": "대시보드 편집",
+    "kpiSummary": {
+      "title": "KPI 요약"
+    },
+    "kpi": {
+      "temperatureCompliance": {
+        "title": "온도 준수율",
+        "aboveTarget": "목표치({{target}}%) 대비 초과 달성",
+        "belowTarget": "목표치({{target}}%) 대비 미달",
+        "description": "냉각 시스템의 성능 저하가 의심됩니다."
+      },
+      "productIntegrity": {
+        "title": "품질 유지율",
+        "aboveTarget": "목표치({{target}}%) 대비 초과 달성",
+        "belowTarget": "목표치({{target}}%) 대비 미달",
+        "description": "패키징 손상으로 인한 품질 저하가 의심됩니다."
+      },
+      "onTimePerformance": {
+        "title": "정시 도착률",
+        "aboveTarget": "목표치({{target}}%) 대비 초과 달성",
+        "belowTarget": "목표치({{target}}%) 대비 미달",
+        "description": "교통 체증 구간 회피를 통해 평균 운송 시간을 단축했습니다."
+      },
+      "incidentRate": {
+        "title": "이벤트 발생률",
+        "aboveTarget": "목표치({{target}}%) 초과",
+        "belowTarget": "목표치({{target}}%) 미달",
+        "description": "허용 범위를 넘는 충격 이벤트가 다수 감지되었습니다."
+      }
+    },
+    "aiInsights": {
+      "title": "AI 인사이트 요약",
+      "critical": "위험",
+      "warning": "주의",
+      "suggestion": "제안",
+      "aiConfidence": "AI 신뢰도 {{value}}%",
+      "emergencyAction": "긴급조치",
+      "viewDetails": "상세보기",
+      "dismiss": "무시하기",
+      "reroute": "경로 적용",
+      "cards": {
+        "heatExposure": {
+          "title": "해상 운송 구간 고온 노출, 반도체 품질 리스크 급증",
+          "description": "해상 운송 구간에서 25°C 이상 고온이 반복 발생하며 최대 48.5°C까지 상승했습니다. 제품 품질 검사가 필요합니다."
+        },
+        "shockUnloading": {
+          "title": "시애틀 터미널 하역 중 반복적 충격 발생",
+          "description": "충격 알람 총 281회, 최대 9.9G의 충격이 감지되었습니다. 하역 작업 프로세스 전반에 대한 점검 조치가 필요합니다."
+        },
+        "temperatureFluctuation": {
+          "title": "복합 운송 구간 온도 변화 발생, 반도체 열충격 위험",
+          "description": "부산-해상-시애틀 이동 과정에서 10°C 이상의 온도편차가 관측되었습니다. 온도 변화율 관리 조치가 권장됩니다."
+        },
+        "minorShocks": {
+          "title": "기차 운송 구간에서 경미한 충격 발생",
+          "description": "시카고 기차 운송 중 경미한 충격이 5회 발생했으나, 품질에 중대한 영향은 발생하지 않을 것으로 보입니다."
+        }
+      }
+    },
+    "alerts": {
+      "title": "실시간 알림",
+      "newNotifications": "새로운 {{count}}개의 알림이 있습니다.",
+      "all": "전체",
+      "critical": "위험",
+      "warning": "주의",
+      "normal": "정상",
+      "viewDetails": "상세보기",
+      "timeAgo": "{{time}} 전",
+      "items": {
+        "temperature119": {
+          "title": "온도 48.5°C 기록",
+          "description": "설정 온도(25°C)를 23.5°C 초과. 반도체 품질 손상 위험이 매우 높습니다. 즉시 냉각 조치가 필요합니다."
+        },
+        "shock99G": {
+          "title": "충격 9.9G 감지",
+          "description": "설정 충격 한계(2G)를 7.9G 초과. 물리적 파손 확인을 위해 화물 상태 긴급 점검이 필요합니다."
+        },
+        "prolongedTemp": {
+          "title": "온도 25°C 이상 지속",
+          "description": "온도 25°C 이상이 전체 운송 기간의 38.6% 지속.\n장시간 고온 환경 노출로 반도체의 전기적 특성 변화가 우려됩니다."
+        },
+        "shocksSeattle": {
+          "title": "시애틀 터미널에서 충격 261회 감지",
+          "description": "충격 2G 초과 이벤트 261회 발생.\n반복적인 충격으로 반도체 패키지 손상 가능성이 높습니다."
+        },
+        "humidity80": {
+          "title": "습도 80% 기록",
+          "description": "설정 습도(60%)를 20% 초과. 일시적인 고습 환경이 감지되었습니다.\n지속 모니터링이 필요합니다."
+        }
+      }
+    },
+    "environmentTrend": {
+      "title": "환경 데이터 트렌드",
+      "subtitle": "각 운송 구간의 성과 및 리스크 평가",
+      "tabs": {
+        "temperature": "온도",
+        "humidity": "습도",
+        "light": "조도",
+        "shock": "충격"
+      },
+      "viewMode": {
+        "lastDay": "최근 24시간",
+        "lastWeek": "최근 7일"
+      },
+      "stats": {
+        "avgTemperature": "평균 온도",
+        "maxTemperature": "최고 온도",
+        "minTemperature": "최저 온도",
+        "avgHumidity": "평균 습도",
+        "maxHumidity": "최고 습도",
+        "minHumidity": "최저 습도",
+        "avgLight": "평균 조도",
+        "maxLight": "최대 조도",
+        "minLight": "최저 조도",
+        "exposureTime": "노출 시간",
+        "openCount": "개봉 횟수",
+        "avgShock": "평균 충격",
+        "maxShock": "최고 충격",
+        "minShock": "최저 충격",
+        "violations": "이탈 건수",
+        "targetRange": "설정 범위",
+        "excursionCount": "이탈 건수"
+      },
+      "description": {
+        "temperatureViolation": "지난 24시간 동안 급격한 온도 변화 관측 및 평균\n온도가 {{value}}{{unit}}로 기준 범위를 초과하였습니다.",
+        "temperatureNormal": "지난 24시간 동안 평균 온도는 {{value}}{{unit}}로\n안정적이나, 온도 이탈이 총 {{violations}}회 감지되었습니다.",
+        "temperatureStable": "지난 24시간 동안 평균 온도는 {{value}}{{unit}}로 기준 범위 내에서 안정적으로 유지되었습니다.",
+        "otherViolation": "지난 24시간 동안 급격한 {{label}} 변화 관측 및 평균\n{{label}}가 {{value}}{{unit}}로 기준 범위를 초과하였습니다.",
+        "otherNormal": "지난 24시간 동안 평균 {{label}}는 {{value}}{{unit}}로\n안정적이나, {{label}} 이탈이 총 {{violations}}회 감지되었습니다.",
+        "otherStable": "지난 24시간 동안 평균 {{label}}는 {{value}}{{unit}}로\n기준 범위 내에서 안정적으로 유지되었습니다.",
+        "noData": "선택한 기간에 데이터가 없습니다."
+      },
+      "infoCard": {
+        "title": "최근 24시간 동안 급격한 온도 변화 관측; 평균 온도(25.1°C)가 기준을 초과했습니다.",
+        "viewDetails": "상세보기"
+      }
+    },
+    "map": {
+      "title": "경로 및 현재 위치",
+      "subtitle": "실시간 위치",
+      "journeyMap": "여정 지도",
+      "warehouseMap": "창고 지도",
+      "fullscreen": "전체화면",
+      "inTransit": "해상 운송중",
+      "updated": "{{time}} 업데이트",
+      "currentLocation": "현재 위치",
+      "nearSeattle": "시애틀 터미널 부근",
+      "eta": "도착 예정",
+      "currentTemp": "현재 온도",
+      "remainingDistance": "남은 거리",
+      "shockThreshold": "충격 임계치 초과",
+      "warningBadge": "주의",
+      "dangerBadge": "위험",
+      "eventLocation": "발생 위치",
+      "northPacific": "북태평양 해상",
+      "measuredValue": "측정 수치",
+      "duration": "지속 시간",
+      "durationValue": "3초간 발생",
+      "durationValueZero": "0초간 발생",
+      "avgSpeed": "평균 속도",
+      "alertTable": {
+        "status": "상태",
+        "title": "타이틀",
+        "time": "시간",
+        "location": "위치 (위경도)",
+        "eventLocation": "발생 위치",
+        "measuredValue": "측정 수치",
+        "duration": "지속 시간",
+        "avgSpeed": "평균 속도",
+        "remove": "제거",
+        "danger": "위험",
+        "warning": "주의",
+        "tempExceeded": "온도 임계치 초과",
+        "shockExceeded": "충격 임계치 초과",
+        "exceeds30min": "30분 초과",
+        "duration30min": "30분",
+        "duration5min": "5분",
+        "shockCount": "충격 횟수(1시간): 11회",
+        "shockCountLabel": "충격 횟수(1시간)",
+        "shockCountValue": "11회",
+        "maritimeTransit": "해상 운송 중",
+        "seattleTerminal": "시애틀 터미널",
+        "usInland": "미국 내륙"
+      }
+    },
+    "activeTasks": {
+      "title": "진행 중인 작업",
+      "totalTasks": "전체 {{count}}개의 작업",
+      "searchPlaceholder": "키워드 검색",
+      "description": "등록된 총 {{total}}대의 디바이스 중 {{inTransit}}대가 운송 중이며, 나머지 {{stationary}}대는 정지 상태입니다.\n현재 활성화된 운송 건은 {{active}}건이며, 실시간 모니터링이 진행 중입니다.",
+      "columns": {
+        "select": "선택",
+        "journeyId": "여정 ID",
+        "productName": "제품명",
+        "client": "고객사",
+        "location": "현재 위치",
+        "status": "상태",
+        "eta": "도착 예정"
+      },
+      "status": {
+        "inTransit": "운송중"
+      }
+    },
+    "deviceManagement": {
+      "title": "디바이스 통합 관리",
+      "totalDevices": "전체 {{count}}개의 디바이스",
+      "all": "전체",
+      "critical": "위험",
+      "warning": "주의",
+      "normal": "정상",
+      "searchPlaceholder": "키워드 검색",
+      "downloadCsv": "CSV 다운로드",
+      "devicesRequiringAction": "조치가 필요한 디바이스",
+      "summaryDescription": "전체 디바이스 중 {{count}}대에서 위험 또는 주의 상태입니다.\n주요 원인은 배터리 잔량 부족이며, 데이터 손실 방지를 위해 즉시 교체 또는 조치 필요합니다.",
+      "statusBar": {
+        "critical": "위험",
+        "warning": "주의",
+        "normal": "정상"
+      },
+      "alertBox": {
+        "criticalPrefix": "위험 ({{count}}개): ",
+        "batteryWarning": "배터리가 {{threshold}}% 미만입니다. 즉시 교체하세요."
+      },
+      "columns": {
+        "select": "선택",
+        "deviceId": "디바이스 ID",
+        "journeyId": "여정 ID",
+        "status": "상태",
+        "battery": "배터리 잔량",
+        "lastComm": "마지막 통신",
+        "regDate": "등록일"
+      }
+    },
+    "journeyTable": {
+      "productName": "고가 반도체",
+      "customer": "TechCore Systems",
+      "currentLocation": "시애틀 터미널 부근",
+      "status": "운송중",
+      "arrivalEstimate": "12일 10시간 1분 후 도착 예정"
+    },
+    "bio": {
+      "kpi": {
+        "temperatureCompliance": {
+          "title": "온도 준수율",
+          "subtitle": "목표치(95%) 대비 초과 달성",
+          "description": "전체 운송의 99.6%에서 온도 범위를 유지했습니다."
+        },
+        "qualityRetention": {
+          "title": "품질 유지율",
+          "subtitle": "목표치(98%) 대비 초과 달성",
+          "description": "손상이나 오염 없이 초기 품질 상태 그대로 도착했습니다."
+        },
+        "onTimeArrival": {
+          "title": "정시 도착률",
+          "subtitle": "목표치(90%) 대비 초과 달성",
+          "description": "모든 화물이 예정 시간보다 평균 30분 조기 도착했습니다."
+        },
+        "eventRate": {
+          "title": "이벤트 발생률",
+          "subtitle": "목표치(0%) 대비 초과 달성",
+          "description": "발생 빈도는 낮으나 품질 영향도가 높습니다."
+        }
+      },
+      "aiInsights": {
+        "cards": {
+          "nightMonitoring": {
+            "title": "콜드체인 모니터링 사각지대 감지",
+            "description": "온도 일탈이 총 4회 연속 발생했으나 즉각적인 대응이 이뤄지지 않은 것으로 확인되었습니다. "
+          },
+          "usInlandDeviation": {
+            "title": "미국 내륙 운송 구간에서 온도 일탈 발생",
+            "description": "미국 내륙 복합 운송 중 온도가 최대 9.0°C까지 상승하며 권장 범위를 약 30분간 초과했습니다."
+          },
+          "osongRoute": {
+            "title": "오송 출발 경로 운송 소요 시간 증가 관측",
+            "description": "과거 이력 및 시뮬레이션 결과, 수도권 주요 간선 대체 경로 이용 시 최대 1.5시간 단축과 유류비 절감이 예상됩니다."
+          },
+          "icnLaxExcellent": {
+            "title": "인천 - LAX 전 구간 우수한 품질 성과 확인",
+            "description": "과거 동일 항공 루트 운송 이력에서도 일관되게 높은 온도 관리 안정성이 확인되었습니다."
+          }
+        }
+      },
+      "alerts": {
+        "items": {
+          "finalDelivery": {
+            "title": "최종 인도 완료 (뉴욕 병원)",
+            "description": "냉장 검수 및 수령 서명이 완료되었습니다."
+          },
+          "coldChainRate": {
+            "title": "콜드체인 유지율 99.6% 달성",
+            "description": "전체 운송 기간 중 온도 기준을 99.6% 충족했습니다."
+          },
+          "noShockEvent": {
+            "title": "충격 이벤트 0회 확인",
+            "description": "전 구간에서 충격 없이 안정적으로 운송되었습니다."
+          },
+          "usInlandConcentrated": {
+            "title": "미국 내륙 구간 집중 이탈",
+            "description": "전체 온도 이탈이 미국 내륙 운송 구간에 집중되었습니다."
+          },
+          "tempNormalRecovery": {
+            "title": "온도 정상 범위 복귀",
+            "description": "온도가 정상 범위로 복귀하여 추가 모니터링이 필요합니다."
+          },
+          "tempExceed30min": {
+            "title": "30분 연속 온도 초과 (8.2~9.0°C)",
+            "description": "04:20~04:50 동안 4회 연속 온도 이탈이 발생했습니다.\n즉시 확인이 필요합니다."
+          },
+          "temp9Detected": {
+            "title": "온도 9.0°C 감지",
+            "description": "미국 내륙 운송 중 온도가 허용 범위(2~8°C)를 초과했으며,\n즉시 확인이 필요합니다."
+          },
+          "tempDeviationPersist": {
+            "title": "온도 이탈 지속 감지",
+            "description": "설정 온도 초과 상태가 30분간 지속되고 있습니다.\n즉시 확인이 필요합니다."
+          }
+        }
+      },
+      "environmentTrend": {
+        "description": "지난 24시간 동안 평균 온도는 {{value}}{{unit}}로 안정적이나,\n온도 이탈이 총 {{violations}}회 감지되었습니다"
+      },
+      "activeTasks": {
+        "description": "등록된 총 5대의 디바이스 중 1대가 운송을 완료하였으며, 나머지 4대는 정지 상태입니다. 현재 활성화된 운송 건은 없으며, 도착한 기기의 데이터 회수가 가능합니다."
+      },
+      "deviceManagement": {
+        "description": "전체 디바이스 중 9대에서 위험 또는 주의 상태입니다. 주요 원인은 배터리 잔량 부족(15% 미만) 및 온도 관리 이슈이며, 데이터 유실 방지를 위해 즉시 조치가 필요합니다",
+        "warningMessage": "위험 (3개): D-1024 배터리가 15% 미만입니다. 즉시 교체하세요."
+      },
+      "map": {
+        "currentLocation": "뉴욕 병원",
+        "warningLocation": "뉴욕 병원 인근",
+        "temperatureAlert": "온도 임계치 초과",
+        "newYorkHospital": "뉴욕 병원"
+      },
+      "journeyTable": {
+        "productName": "바이오 의약품",
+        "customer": "Medipharm Global",
+        "currentLocation": "뉴욕 병원 도착",
+        "status": "완료",
+        "arrivalEstimate": "N/A"
+      }
+    }
+  },
+  "warehouse": {
+    "map": {
+      "loading": "창고 지도를 불러오는 중...",
+      "error": "창고 지도를 불러오는 중 오류가 발생했습니다.",
+      "refresh": "새로고침"
+    }
+  },
+  "journey": {
+    "notFound": "여정을 찾을 수 없습니다.",
+    "status": {
+      "shipping": "운송중",
+      "completed": "운송 완료",
+      "pending": "대기",
+      "delayed": "지연"
+    },
+    "bio": {
+      "description": "총 8일간의 바이오 의약품 운송 여정이 성공적으로 완료되었습니다.\n미국 내륙 구간에서 일시적인 온도 상승이 있었으나 허용 범위 관리 하에 안정적으로 복구되어, 전체 일정에 맞춰 정상 도착했습니다"
+    },
+    "timeline": {
+      "departure": "출발",
+      "arrival": "도착",
+      "semicon": {
+        "daejeonBusan": "대전 - 부산",
+        "busanWarehouse": "부산 창고",
+        "busanSeattle": "부산 - 시애틀",
+        "seattleChicago": "시애틀 - 시카고",
+        "chicagoIndianapolis": "시카고 - 인디애나폴리스",
+        "vehicleCompleted": "차량 운송 완료",
+        "gateOutCompleted": "출고 완료",
+        "seaInTransit": "해상 운송중",
+        "railScheduled": "기차 운송 예정",
+        "vehicleScheduled": "차량 운송 예정"
+      },
+      "bio": {
+        "osongToIncheon": "오송 → 인천",
+        "incheonToLax": "인천 → LAX",
+        "laxToUsInland": "LAX → 미국 내륙",
+        "usInlandToNy": "미국 내륙 → 뉴욕 병원",
+        "vehicleCompleted": "차량 운송 완료",
+        "flightCompleted": "항공 운송 완료",
+        "inlandCompleted": "내륙 운송 완료",
+        "finalDelivery": "최종 인도 완료",
+        "osongToIncheonAirport": "오송 바이오단지 - 인천 공항",
+        "incheonAirportToLax": "인천 국제공항 - LAX",
+        "laxToChicago": "LAX - 시카고",
+        "chicagoToNewYork": "시카고 - 뉴욕",
+        "newYorkWarehouseToHospital": "뉴욕 물류 창고 - 뉴욕 병원",
+        "trainCompleted": "기차 운송 완료",
+        "truckCompleted": "트럭 운송 완료"
+      }
+    },
+    "compliance": {
+      "bio": {
+        "gdp": "FDA 승인 번호 확인",
+        "coldchain": "CoA 첨부",
+        "coa": "MSDS 첨부",
+        "tds": "온도 이력서 생성",
+        "customs": "통관 서류 완비"
+      }
+    },
+    "warning": {
+      "location": "발생 위치",
+      "measurement": "측정 수치",
+      "duration": "지속 시간",
+      "avgSpeed": "평균 속도"
+    },
+    "actions": {
+      "share": "공유",
+      "savePdf": "PDF 저장"
+    },
+    "info": {
+      "deviceSN": "디바이스 S/N",
+      "transportMode": "운송 수단",
+      "departureTime": "출발 시간",
+      "arrivalTime": "도착 시간",
+      "tempThreshold": "온도 설정 범위",
+      "humidityThreshold": "습도 설정 범위",
+      "shockThreshold": "충격 설정 범위",
+      "lightThreshold": "조도 설정 범위"
+    },
+    "summary": {
+      "title": "진행 중인 여정",
+      "subtitle": "진행도 및 구간별 현황",
+      "arrivingIn": "{{time}} 후, {{location}}에 도착 예정입니다.",
+      "time15mins": "15분",
+      "eta": "{{date}} 도착 예정",
+      "etaLabel": "도착 예정",
+      "onSchedule": "정상 진행중",
+      "inProgress": "진행 중",
+      "riskScore": "리스크 스코어",
+      "avgTemperature": "평균 온도",
+      "avgHumidity": "평균 습도",
+      "eventsDetected": "이벤트 발생",
+      "viewFullJourney": "전체 여정 보기",
+      "sectionSummary": "구간별 요약",
+      "bio": {
+        "completed": "여정 완료",
+        "allCompleted": "모든 운송 여정이 완료되었습니다.",
+        "completedAt": "도착 완료",
+        "completedLabel": "완료"
+      },
+      "sectionTable": {
+        "leg": "구간",
+        "riskScore": "리스크 스코어",
+        "elapsedTime": "소요 시간",
+        "avgTemperature": "평균 온도",
+        "avgHumidity": "평균 습도",
+        "eventsDetected": "이벤트 발생",
+        "bio": {
+          "leg1": "오송 바이오 단지 - 인천공항",
+          "leg2": "인천- LAX",
+          "leg3": "LAX - 시카고",
+          "leg4": "시카고 - 뉴욕",
+          "leg5": "뉴욕 물류창고 - 뉴욕 병원"
+        },
+        "semicon": {
+          "leg1": "대전 - 부산",
+          "leg2": "부산 창고",
+          "leg3": "부산 - 시애틀",
+          "leg4": "시애틀 - 시카고",
+          "leg5": "시카고 - 인디애나폴리스"
+        }
+      }
+    },
+    "map": {
+      "title": "경로 및 현재 위치",
+      "subtitle": "실시간 위치 및 경로 확인",
+      "journeyMap": "여정 지도",
+      "warehouseMap": "창고 지도",
+      "fullScreen": "전체 화면",
+      "layerDefault": "기본",
+      "layerStandard": "표준",
+      "layerSatellite": "위성",
+      "seaTransit": "해상 운송중 ({{id}})",
+      "updatedAgo": "{{time}}전 업데이트",
+      "currentLocation": "현재 위치",
+      "nextDestination": "다음 목적지",
+      "estimatedArrival": "예상 도착",
+      "currentTemperature": "현재 온도",
+      "currentHumidity": "현재 습도",
+      "pacificOceanCrossing": "태평양 횡단 중",
+      "distanceRemaining": "남은 거리",
+      "bio": {
+        "deliveryComplete": "운송 완료",
+        "finalDestination": "최종 도착지",
+        "newYorkHospitalCenter": "뉴욕 병원 물류센터",
+        "totalDuration": "총 소요 시간",
+        "totalDurationValue": "8일 3시간",
+        "finalTemperature": "최종 온도"
+      }
+    },
+    "environment": {
+      "title": "환경 데이터 모니터링",
+      "updatedAgo": "{{time}} 업데이트",
+      "temperature": "온도",
+      "humidity": "습도",
+      "shock": "충격",
+      "light": "조도",
+      "avgLabel": "평균 {{type}}",
+      "maxLabel": "최고 {{type}}",
+      "minLabel": "최저 {{type}}",
+      "settingsRange": "설정 범위",
+      "excursions": "이탈 건수",
+      "descriptions": {
+        "temperature": "지난 18시간 동안 급격한 온도 변화 관측 평균 온도가 {{avg}}{{unit}}로 기준 범위를 초과하였으며,\n총 {{count}}건의 이탈이 발생하여 환경 관리가 불안정합니다.",
+        "humidity": "운송 전 구간 습도가 설정 범위({{minRange}}~{{maxRange}}%) 내에서 안정적으로 유지되었습니다.\n습기 유입 차단이 양호했으나, 도착지 하역 시 급격한 온습도 변화에 따른 결로 현상 주의를 권장합니다.",
+        "shock": "시애틀 터미널 하역 작업 중 임계치({{maxRange}}{{unit}})를 초과하는 충격이 감지되었습니다.\n물리적 파손 가능성이 있으므로 제품 외관 및 포장 상태 정밀 검수를 권장합니다.",
+        "light": "대전 출발 시 정상적인 출고 과정에서 한 번 감지된 것 외에는 문제가 없었습니다.\n이후 안정적으로 유지되어 보안 측면에서 안정적이었습니다.",
+        "avgExceeded": "지난 18시간 동안 평균 {{label}}가 {{avg}}{{unit}}로 기준 범위({{minRange}}-{{maxRange}}{{unit}})를 초과하였습니다.",
+        "stable": "지난 18시간 동안 {{label}}가 안정적으로 유지되었습니다.\n모든 측정값이 설정 범위 내에 있습니다.",
+        "dataStable": "데이터가 안정적으로 유지되었습니다."
+      },
+      "bio": {
+        "temperature": "운송 전 구간 평균 온도는 {{avg}}{{unit}}로 안정적이나, 일시적인 온도 이탈이 총 {{count}}회 감지되었습니다.\n전반적인 품질 유지에는 영향이 미미하나, 이탈 발생 시점의 상세 패턴 확인을 권장합니다.",
+        "humidity": "운송 전 구간 습도가 설정 범위({{minRange}}~{{maxRange}}%) 내에서 안정적으로 유지되었습니다.\n습기 유입 차단이 양호했으나, 도착지 하역 시 급격한 온습도 변화에 따른 결로 현상 주의를 권장합니다.",
+        "shock": "부산 터미널 하역 작업 중 임계치({{maxRange}}{{unit}})를 초과하는 충격이 감지되었습니다.\n물리적 파손 가능성이 있으므로 제품 외관 및 포장 상태 정밀 검수를 권장합니다.",
+        "light": "대전 출발 시 정상적인 출고 과정에서 한 번 감지된 것 외에는 문제가 없었습니다.\n이후 안정적으로 유지되어 보안 측면에서 안정적이었습니다."
+      }
+    },
+    "devices": {
+      "title": "디바이스 사용 목록",
+      "subtitle": "전체 {{count}}개 디바이스",
+      "description": "등록된 총 {{total}}대의 디바이스 중 {{inUse}}대가 운송중이며, 나머지 {{arrived}}대는 도착 상태입니다.\n현재 활성화된 운송이 {{activeCount}}건 있으며, 도착한 기기의 데이터 회수가 가능합니다.",
+      "deviceId": "디바이스 ID",
+      "shippingCount": "운송횟수",
+      "status": "상태",
+      "batteryLevel": "배터리 잔량",
+      "signalStrength": "신호 강도",
+      "lastCommunication": "마지막 통신",
+      "registeredDate": "등록일",
+      "statusLabels": {
+        "unused": "미사용",
+        "in_use": "운송중",
+        "stopped": "정지",
+        "arrived": "도착"
+      },
+      "signalLabels": {
+        "excellent": "정상",
+        "good": "정상",
+        "weak": "약함",
+        "poor": "약함",
+        "none": "없음"
+      }
+    },
+    "events": {
+      "title": "이벤트 및 알람 이력",
+      "subtitle": "전체 {{count}}개 이벤트",
+      "time": "시간",
+      "status": "상태",
+      "content": "내용",
+      "manager": "담당자",
+      "attachment": "첨부파일",
+      "statusLabels": {
+        "warning": "주의",
+        "normal": "정상",
+        "danger": "위험"
+      },
+      "all": "전체"
+    },
+    "documents": {
+      "title": "관련 문서 관리",
+      "subtitle": "전체 {{count}}개 문서 · 전체 {{size}}",
+      "upload": "문서 업로드",
+      "download": "문서 다운로드",
+      "generateTempReport": "온도 이력서 생성",
+      "complianceDescription": "반도체 운송 규정 전 항목을 충족했습니다.",
+      "complianceDescriptionBio": "운송 중 단기 온도 이탈 발생으로 인한 관련 문서(온도 이력서, TDS) 첨부 완료",
+      "name": "문서명",
+      "type": "유형",
+      "uploadDate": "업로드일",
+      "uploader": "업로드자",
+      "size": "크기",
+      "version": "버전",
+      "compliance": {
+        "eccn": "ECCN/수출허가",
+        "rohs": "RoHS/REACH 첨부",
+        "msl": "MSL/Bake 첨부",
+        "esd": "ESD",
+        "envLog": "운송 환경 로그+교정",
+        "gdp": "GDP 준수",
+        "coldChain": "콜드체인 인증서",
+        "coa": "CoA 첨부",
+        "compliant": "준수"
+      }
+    },
+    "collaboration": {
+      "title": "협업 메모 및 커뮤니케이션",
+      "subtitle": "팀원들과 실시간으로 소통하고 정보를 공유하세요",
+      "inputPlaceholder": "팀원들과 실시간으로 소통하고 정보를 공유하세요",
+      "addReaction": "반응",
+      "reply": "답글",
+      "loadMore": "더보기",
+      "attachFile": "파일 첨부",
+      "cancel": "취소",
+      "post": "작성"
+    },
+    "locations": {
+      "osongSejong": "오송 세종연구단지",
+      "busanPort": "부산항",
+      "pacificOcean": "태평양 횡단",
+      "seattleTerminal": "시애틀 터미널",
+      "indianapolis": "인디애나폴리스"
+    }
+  }
+}
+

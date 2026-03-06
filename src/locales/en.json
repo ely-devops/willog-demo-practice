@@ -1,0 +1,997 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "keywordSearch": "Keyword Search",
+    "userProfile": "User Profile",
+    "ok": "OK",
+    "reset": "Reset",
+    "submit": "Submit",
+    "time": {
+      "minutesAgo": "{{count}} mins ago",
+      "hoursAgo": "{{count}} hours ago",
+      "daysAgo": "{{count}} days ago"
+    },
+    "datePicker": {
+      "yearFormat": "{{year}}",
+      "yearMonthFormat": "{{month}} {{year}}",
+      "selectStartDate": "Select start date",
+      "selectEndDate": "Select end date",
+      "weekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    }
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English"
+  },
+  "auth": {
+    "title": "Log in to Willog",
+    "login": "Log in",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "emailPlaceholder": "Please enter your approved email ID.",
+    "passwordPlaceholder": "Please enter your password.",
+    "loginError": "Email or password does not match.",
+    "resetPassword": "Please enter your password."
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "register": "Register",
+    "management": "Management",
+    "intelligence": "Data Intelligence",
+    "history": "Audit Trail",
+    "journeyDetail": "Journey Detail",
+    "registerData": "Shipping Data Registration"
+  },
+  "bizCase": {
+    "label": "Select Business Case",
+    "bio": "Life Sciences Cold Chain",
+    "fnb": "Food & Beverage Cold Chain",
+    "semicon": "High-Tech & High-Value",
+    "general": "General Freight"
+  },
+  "aiAssistant": {
+    "buttonLabel": "AI Assistant",
+    "tooltipTitle": "Meet Your New AI Partner",
+    "tooltipMessage": "Click anytime for shipment analysis or risk predictions.",
+    "confirmButton": "OK",
+    "maximizeButton": "Maximize",
+    "settingsButton": "Settings",
+    "closeButton": "Close",
+    "chatHeader": "Hello, Min Jun Kim.",
+    "chatTitle": "How can I help you today?",
+    "prompt1": "90-Day Throughput Trend",
+    "prompt2": "High-Risk Quality Shipments (Past Year)",
+    "prompt3": "Bio-SLA Non-Compliant Shipments (Past Year)",
+    "inputPlaceholder": "Ask Willog a question",
+    "sendButton": "Send",
+    "voiceInput": "Voice input",
+    "home": "Home",
+    "actions": "Actions",
+    "topics": "Topics",
+    "save": "Save",
+    "help": "Help",
+    "recent": "Recent",
+    "viewAll": "View All",
+    "minimize": "Minimize",
+    "attach": "Attach",
+    "historyItem1": "Warehouse Utilization Analysis: In/Out Flow",
+    "historyItem2": "Inventory System Optimization",
+    "historyItem3": "Factor-based Delivery Delay Analysis",
+    "historyItem4": "Seasonal Logistics Optimization",
+    "historyItem5": "Delivery Flexibility Improvement based on Demand",
+    "historyItem6": "Inventory Automation Study",
+    "historyItem7": "Cost-Optimized Transport Routes",
+    "response": {
+      "title": "90-Day Throughput Trend",
+      "def1Term": "Total Throughput",
+      "def1Desc": "Calculated as a unique count of all shipments active during the analysis period. Each shipment is counted once based on its presence within the period, excluding any cumulative calculation of daily dwell time.",
+      "def2Term": "Daily Avg. Throughput",
+      "def2Desc": "Average number of active shipments per day during the selected period.",
+      "def3Term": "Departures (Gate-out)",
+      "def3Desc": "Total shipments departed (Gate-out) on the specific date.",
+      "kpiTitle": "Key Metrics Summary",
+      "kpiPeriod": "Analysis Period: 2025-11-05 - 2026-02-02 (90 Days)",
+      "totalVolume": "Total Throughput",
+      "dailyAvg": "Daily Avg. Throughput",
+      "departureShipments": "Daily Avg. Departures",
+      "trendTitle": "Trend & Variance Analysis",
+      "trendSummary": "Over the past 90 days, throughput stabilized at a daily average of approximately 180 units. However, a recovery trend is currently observed following temporary fluctuations (surge and dip) during the year-end and New Year period.",
+      "bullet1": "Peak (Nov 14): 195 units - Year-end outbound surge.",
+      "bullet2": "Min (Jan 23): 138 units - Holiday impact.",
+      "bullet3": "Recovery: Rapid return to standard levels post-holiday.",
+      "chartAlt": "Throughput trend chart",
+      "periodTitle": "Detailed Flow by Period",
+      "timelineTitle": "Trend Insight Timeline",
+      "viewDetails": "View Details",
+      "period": {
+        "increase": "Growth Phase",
+        "decrease": "Decline Phase",
+        "recovery": "Recovery Phase"
+      },
+      "periodDate1": "2025.11.05 - 2025.11.14",
+      "periodDate2": "2025.11.14 - 2026.01.23",
+      "periodDate3": "2026.01.23 - Now",
+      "period1Desc": "Year-end outbound surge increased daily departures. Extended lead times contributed to overall rise in in-transit volume.",
+      "period2Desc": "Holiday impact reduced new departures, leading to gradual decline in total in-transit volume.",
+      "period3Desc": "Departures normalized post-holiday. In-transit throughput showing steady recovery to average levels."
+    },
+    "prompt2Response": {
+      "title": "Top 3 High-Risk Shipments (Past Year)",
+      "description": "Analysis of the past year's transit history indicates that quality risks were primarily driven by cumulative environmental deviations (temperature, humidity, shock) across the entire journey, rather than issues in specific single segments. Notably, all Top 3 cases exhibited recurring excursion patterns throughout the route, rather than isolated, one-time events.",
+      "overviewTitle": "Overall Quality Risk Summary",
+      "overviewTarget": "Scope: All shipments (Past 1 Year)",
+      "overviewCriteria": "Risk Criteria: Excursions (Temp/Humidity/Shock/Light), Recurring patterns, Critical events.",
+      "overviewPerspective": "Focus: Cumulative risk & Recurrence probability (vs. Isolated events).",
+      "top3Title": "Top 3 Shipments: Highest Quality Risk Probability",
+      "table1": {
+        "rank": "Rank",
+        "shipmentId": "Shipment ID",
+        "riskScore": "Total Risk Score",
+        "riskType": "Primary Risk Types",
+        "section": "Major Incident Zones"
+      },
+      "insightTitle": "Interpretation & Insights",
+      "insightBullet1": "Top 3 cases show cumulative risks across the entire route (vs. isolated events). Recurring patterns detected at specific transfer points.",
+      "insightBullet2": "Despite varying risk types, all share a common pattern: Cumulative impact from intermittent environmental fluctuations (Temp/Shock).",
+      "insightBullet3": "Risks are attributed to overall transit consistency and handover management, rather than isolated point failures.",
+      "insightBullet4": "AI Agent Selection: Shipments with highest relative quality risk probability based on 1-year history.",
+      "highRiskTitle": "Primary Risk Drivers: Highest-Risk Shipments",
+      "mainIssueSubtitle": "Key Issues",
+      "mainIssueDesc": "Quality risks concentrated in transshipment and ocean phases of multimodal transport.\n\nInland/Storage segments stable. Risk drivers: Recurring temp/shock events on Busan–Seattle (Ocean/Terminal) leg.",
+      "analysisSubtitle": "Analysis",
+      "analysisDesc": "Ocean segment showed cumulative temp. excursions & spikes. Frequent shocks at Seattle Terminal caused 'Critical' risk levels. Root cause: Process control limitations in specific segments.\n\nZero excursions in origin/destination legs. Disparity indicates inconsistent management levels across route segments.",
+      "analysisDesc2": "Currently, response time for quality risk events averages 2-4 hours. Verification of SLA-based alert confirmation and response processes with local logistics centers and partners is recommended.",
+      "deviationTitle": "Excursions per Segment",
+      "table2": {
+        "section": "Segment",
+        "temperature": "Temperature",
+        "shock": "Shock",
+        "humidity": "Humidity",
+        "light": "Light"
+      },
+      "seaTempTitle": "Ocean Segment Temperature Trend",
+      "seaTempPeriod": "Period: 09-04-2025 00:00 – 09-05-2025 07:00",
+      "graph1Alt": "Ocean segment temperature trend chart",
+      "seaShockTitle": "Ocean Segment Shock Trend",
+      "seaShockPeriod": "Inquiry Period: 10-06-2025",
+      "graph2Alt": "Ocean segment shock trend chart"
+    },
+    "prompt3Response": {
+      "title": "Top 3 Bio-SLA Non-Compliance Shipments (Past Year)",
+      "statusTitle": "Overall SLA Compliance Summary",
+      "statusDesc1": "Scope: All bio cold chain shipments (Past Year)",
+      "statusDesc2": "SLA Criteria: Temperature compliance, Critical events",
+      "top3Title": "Top 3 Non-Compliant Shipments (Highest Risk)",
+      "table": {
+        "rank": "Rank",
+        "shipmentId": "Shipment ID",
+        "section": "Major Incident Zones",
+        "issueType": "Primary Issue Types",
+        "riskBasis": "Risk Assessment Basis"
+      },
+      "insightTitle": "Interpretation & Insights",
+      "insightBullet1": "Yearly Bio-SLA Analysis: Majority of shipments met Temp/Humidity standards. Exceptions show recurring excursions or response delays.",
+      "insightBullet2": "SLA non-compliance concentrated in specific segments (Nighttime Inland Transit & Unloading), rather than distributed across the entire route.",
+      "insightBullet3": "High-risk cases driven by operational process limitations, rather than external environmental conditions.",
+      "insightBullet4": "AI-generated summary based on 1-year SLA compliance & risk history. Select specific shipments for detailed segment analysis.",
+      "highRiskTitle": "SLA Non-Compliance Details (Selected Shipment)",
+      "highRiskIdPrimary": "ID-SC05",
+      "highRiskIdSecondary": "+2",
+      "mainIssueTitle": "Key Issues",
+      "mainIssueDesc1": "Temperature excursion detected during U.S. Inland Transit (Early Morning). Prolonged response time indicates monitoring blind spots. Operational protocol improvement required.",
+      "mainIssueDesc2": "Other segments remained stable with zero SLA violations. Significant management disparity observed between Inland Transit vs. other segments.",
+      "analysisTitle": "Analysis",
+      "analysisDesc": "ICN–LAX Air Segment: Consistently high SLA compliance across all similar bio-shipments. Demonstrates structurally sound operations and robust response systems.",
+      "improvementTitle": "Improvement Proposal",
+      "improvementDesc": "Adopting the stable ICN–LAX operational framework as a benchmark to optimize U.S. inland transit is recommended for enhanced efficiency and quality.",
+      "tempTrendTitle": "U.S. Inland Transit Temperature Trends",
+      "tempTrendPeriod": "Period: Apr 06, 2025 00:00 – 07:00",
+      "graph1Alt": "U.S. inland transit temperature trend chart",
+      "stageScoreTitle": "Risk Score by Transit Phase",
+      "stageScorePeriod": "Period: Apr 06, 2025 00:00 – 07:00",
+      "graph2Alt": "Risk score by transit phase chart",
+      "comparisonTitle": "Risk Comparison: ICN–LAX (Air) vs. Major Routes",
+      "comparisonDesc": "Benchmarking ICN–LAX risk score against average risk of major outbound routes from Korea.",
+      "comparisonNote": "Lower scores indicate more stable performance.",
+      "graph3Alt": "Risk comparison chart"
+    },
+    "alert": {
+      "analyzing": "Analyzing content",
+      "preparingResponse": "Confirming temperature excursion on Pallet 10 and preparing appropriate response measures.",
+      "title": "Temperature excursion detected on Pallet 10.\nHigh risk of exceeding 46.4°F threshold in 15 mins.",
+      "description": "Current Temp: 41.4°F (+2.2°F above target). Rapid rise detected in last 15 mins. Immediate cooling adjustment required.",
+      "currentStatus": "Current Status",
+      "currentTemp": "Current Temperature",
+      "currentSpeed": "Current Speed",
+      "tempValue": "41.4℉",
+      "tempDelta": "43.7℉",
+      "speedValue": "42mph",
+      "speedDelta": "3mph",
+      "forecastTitle": "AI Forecast & Temperature Trends",
+      "forecastDesc": "AI Forecast: Temperature likely to exceed 46.4°F limit in 15 mins. Primary Cause: Fan motor anomaly (87% match). Risk: Potential cargo loss.",
+      "rcaTitle": "AI Root Cause Analysis (RCA)",
+      "rcaDesc": "Analysis of 67 historical shipments & 112 equipment patterns indicates 87% match with cooling fan failure.",
+      "rcaTags": {
+        "historical": "Historical Shipments",
+        "equipment": "Equipment Patterns",
+        "sensor": "Sensor Logs"
+      },
+      "rcaCauses": {
+        "powerSupply": "Power supply issue",
+        "coolingFan": "Cooling fan assembly failure",
+        "mainBoard": "Main board damage"
+      },
+      "recommendedTitle": "AI Recommended Actions",
+      "recommendedActions": [
+        "Alert Driver (John Smith): Max Cooling",
+        "Request Speed Reduction (42 → 31 mph)",
+        "Share Emergency Status (Chulsoo Kim & 2 others)"
+      ],
+      "recommendedDesc": "Increase cooling output and reduce speed in Pallet 10 zone to mitigate temp. excursion. Execute automated response?",
+      "sendNotifications": "Send Notifications (3)",
+      "viewDetailedData": "View Detailed Data",
+      "action": {
+        "title": "Executing temperature excursion response protocol.",
+        "description": "AI Agent assumed control: Adjusting cooling system.",
+        "realtimeTempTrends": "Real-time Temp. Trends",
+        "realtimeMonitoringFeed": "Real-time Monitoring Feed",
+        "viewDetails": "View Details",
+        "sendingAlerts": "Sending 3 alerts...",
+        "preparingAction": "Preparing response actions...",
+        "completed": "Completed",
+        "remaining": "remaining",
+        "tasks": {
+          "systemWarning": "System warning issued",
+          "systemWarningSub": "SMS completed, 68→31mph",
+          "driverComm": "Driver communication established",
+          "driverCommSub": "SMS completed, 68→31mph",
+          "speedReduction": "Speed reduction command sent",
+          "speedReductionSub": "SMS completed, 68→31mph",
+          "sendingAlerts": "Sending alerts (3)",
+          "alertSub1": "SMS sent to John Smith (Driver)",
+          "alertSub2": "App push sent to Mike Park (Transport Manager)",
+          "alertSub3": "Sending Email to Jane Kim (Quality Manager)",
+          "vehicleSpeed": "Vehicle speed reduction confirmed (2)",
+          "targetSpeed": "Target speed reached & max cooling activated",
+          "targetSpeedSub": "Speed 31mph, Cooling output 100% confirmed",
+          "tempDrop": "Temperature drop detected"
+        }
+      },
+      "completion": {
+        "title": "Recovered to normal range (40.6°F) in 5 mins 15 secs.",
+        "description": "Situation resolved as of 7:01:30 AM. Temperature stabilized through max cooling system operation and vehicle speed reduction. Cargo is currently in normal condition. Detailed action records have been automatically saved to the report below.",
+        "resultSummary": "Result Summary",
+        "resultSummaryDesc": "Analysis of similar past cases shows no impact on pharmaceutical quality when resolved within 5 mins 15 secs. Temperature history is automatically recorded for quality assurance documentation.",
+        "startTemp": "Initial Temp",
+        "endTemp": "Final Temp",
+        "duration": "Time Elapsed",
+        "min": "m",
+        "sec": "s",
+        "followUpActions": "Follow-up Actions",
+        "followUpActionsDesc": "Analysis of similar past cases shows no impact on pharmaceutical quality when resolved within 5 mins 15 secs. Temperature history is automatically recorded for quality assurance documentation.",
+        "completedActionsAuto": "Completed Actions (Auto)",
+        "upcomingTasks": "Upcoming Tasks",
+        "downloadReport": "Download Report",
+        "scheduled": "Scheduled",
+        "autoTasks": {
+          "eventLog": "Event log auto-recorded",
+          "eventLogSub": "FDA 21 CFR Part 11 compliant, encrypted storage complete",
+          "stakeholderAlert": "Stakeholder alerts sent (3)",
+          "stakeholderAlertSub": "Real-time bidirectional communication channel activated (latency: 24ms)",
+          "tempHistory": "Temperature history updated",
+          "tempHistorySub": "SET_SPEED_LIMIT = 31mph command packet sent to Vehicle Control Unit (ECU)"
+        },
+        "scheduledTasks": {
+          "incidentReport": "Generating incident report...",
+          "incidentReportSub": "Aggregating AI analysis data and converting to PDF",
+          "coolingInspection": "Cooling system inspection scheduled upon NYC arrival",
+          "coolingInspectionSub": "NYC logistics center maintenance team assigned"
+        }
+      }
+    }
+  },
+  "fileUpload": {
+    "modalTitle": "Upload File",
+    "dragDropText": "Drag & Drop files here or Click to upload.",
+    "bulkUploadHint": "Batch register multiple shipments.",
+    "downloadTemplate": "Download Excel Template",
+    "cautionTitle": "Upload Instructions",
+    "caution1": "Required fields: Ref No., Destination, Product, Device S/N.",
+    "caution2": "Do not alter column order or format.",
+    "caution3": "Duplicate Ref Nos. skipped automatically.",
+    "cancelButton": "Cancel",
+    "submitButton": "Save"
+  },
+  "register": {
+    "title": "Register Shipment",
+    "description": "Batch limit: 100 devices per registration.",
+    "tabs": {
+      "transport": "Transport",
+      "road": "Road",
+      "warehouse": "Warehouse"
+    },
+    "status": {
+      "done": "Done",
+      "warning": "Warning",
+      "error": "Error"
+    },
+    "actions": {
+      "uploadFile": "Upload File",
+      "autoFill": "Auto-fill",
+      "columnSettings": "Column Settings",
+      "reset": "Reset",
+      "saveDraft": "Save Draft",
+      "submit": "Submit"
+    },
+    "columns": {
+      "referenceNo": "Reference No.",
+      "productName": "Product Name",
+      "serialNo": "Serial No.",
+      "client": "Client",
+      "destination": "Destination",
+      "temperature": "Temperature",
+      "humidityAlarm": "Humidity A...",
+      "shockAlarm": "Shock Alarm",
+      "tiltAlarm": "Tilt Alarm",
+      "doorOpenAlarm": "Door Open A...",
+      "departureTime": "Departure Time",
+      "autoDepart": "Auto-D...",
+      "autoArrival": "Auto-A...",
+      "transport": "Transport",
+      "departurePort": "POL",
+      "arrivalPort": "POD",
+      "containerNo": "Container No.",
+      "shipperCode": "Carrier Code",
+      "memo": "Notes"
+    },
+    "modal": {
+      "title": "Registration Summary",
+      "registrationComplete": "Registration Complete",
+      "deviceRegistration": "Device Registration",
+      "containerRegistration": "Container Registration",
+      "distributionByClient": "Distribution by Client",
+      "routeDistribution": "Route Distribution & Estimated Lead Time",
+      "estimatedHours": "Est. {{hours}} hours",
+      "warnings": "Warnings",
+      "cancel": "Cancel",
+      "confirm": "Registration Complete"
+    },
+    "toast": {
+      "title": "{{count}} devices successfully registered.",
+      "message": "Real-time data collection has started."
+    }
+  },
+  "dashboard": {
+    "title": {
+      "bio": "Medipharm Global Dashboard",
+      "fnb": "F&B Cold Chain",
+      "semicon": "TechCore Systems Dashboard",
+      "general": "General Cargo"
+    },
+    "lastUpdated": "Updated {{time}} ago",
+    "editDashboard": "Edit Dashboard",
+    "kpiSummary": {
+      "title": "KPI Summary"
+    },
+    "kpi": {
+      "temperatureCompliance": {
+        "title": "Temperature Compliance Rate",
+        "aboveTarget": "Above Target ({{target}}%)",
+        "belowTarget": "Below Target ({{target}}%)",
+        "description": "Potential cooling system failure detected."
+      },
+      "productIntegrity": {
+        "title": "Product Integrity Score",
+        "aboveTarget": "Above Target ({{target}}%)",
+        "belowTarget": "Below Target ({{target}}%)",
+        "description": "Suspected quality risk due to package damage."
+      },
+      "onTimePerformance": {
+        "title": "On-Time Performance",
+        "aboveTarget": "Above Target ({{target}}%)",
+        "belowTarget": "Below Target ({{target}}%)",
+        "description": "Reduced average transit time by avoiding traffic."
+      },
+      "incidentRate": {
+        "title": "Incident Rate",
+        "aboveTarget": "Above Target ({{target}}%)",
+        "belowTarget": "Below Target ({{target}}%)",
+        "description": "Multiple shock events detected above threshold."
+      }
+    },
+    "aiInsights": {
+      "title": "AI Insights Summary",
+      "critical": "Critical",
+      "warning": "Warning",
+      "suggestion": "Suggestion",
+      "aiConfidence": "AI Confidence {{value}}%",
+      "emergencyAction": "Emergency Action",
+      "viewDetails": "View Details",
+      "dismiss": "Dismiss",
+      "reroute": "Reroute",
+      "cards": {
+        "heatExposure": {
+          "title": "Accumulated heat exposure during sea transit: High risk to semiconductor quality.",
+          "description": "Repeated temperatures > 77.0℉ in sea transit (Peak:\n119.3℉). Immediate cooling inspection and quality."
+        },
+        "shockUnloading": {
+          "title": "Recurring shocks detected during unloading at Seattle terminal; high risk to cargo.",
+          "description": "281 shock alerts triggered (Peak: 9.9G). Urgent review of unloading SOPs and impact mitigation."
+        },
+        "temperatureFluctuation": {
+          "title": "Rapid temperature fluctuations detected in multimodal transit; thermal shock risk.",
+          "description": "Temperature variance > 50°F observed on Busan–Seattle leg. Reinforce insulation and control temp."
+        },
+        "minorShocks": {
+          "title": "Minor shocks detected during rail transit; continuous monitoring recommended.",
+          "description": "5 minor shocks on Chicago rail leg. Historical data implies negligible quality impact; product integrity."
+        }
+      }
+    },
+    "alerts": {
+      "title": "Real-time Alerts",
+      "newNotifications": "{{count}} new notifications.",
+      "all": "All",
+      "critical": "Critical",
+      "warning": "Warning",
+      "normal": "Normal",
+      "viewDetails": "View Details",
+      "timeAgo": "{{time}} ago",
+      "items": {
+        "temperature119": {
+          "title": "Temperature recorded at 119.3\u2109",
+          "description": "Temperature is 42.3\u00b0F above 77.0\u00b0F set point; extreme risk to\nsemiconductor quality. Immediate cooling\nmeasures required."
+        },
+        "shock99G": {
+          "title": "9.9G shock detected",
+          "description": "Detected shock exceeds 2G limit by 7.9G. Immediate emergency\ninspection required to verify cargo integrity."
+        },
+        "prolongedTemp": {
+          "title": "Prolonged temperature exposure > 77.0\u00b0F",
+          "description": "Temperature remained > 77.0\u00b0F for 38.6% of transit. Prolonged\nheat exposure poses high risk of altering semiconductor\nelectrical properties."
+        },
+        "shocksSeattle": {
+          "title": "261 shocks detected at Seattle Terminal",
+          "description": "261 shocks exceeding 2G limit recorded. High risk of semiconductor package damage due to recurring impact."
+        },
+        "humidity80": {
+          "title": "Humidity recorded at 80%",
+          "description": "Humidity exceeded 60% limit by 20%. Temporary high-humidity detected; continuous monitoring required."
+        }
+      }
+    },
+    "environmentTrend": {
+      "title": "Environmental Data Trends",
+      "subtitle": "Performance & Risk Assessment per Leg",
+      "tabs": {
+        "temperature": "Temperature",
+        "humidity": "Humidity",
+        "light": "Light",
+        "shock": "Shock"
+      },
+      "viewMode": {
+        "lastDay": "Last 24 Hours",
+        "lastWeek": "Last 7 Days"
+      },
+      "stats": {
+        "avgTemperature": "Avg. Temperature",
+        "maxTemperature": "Max. Temperature",
+        "minTemperature": "Min. Temperature",
+        "avgHumidity": "Avg. Humidity",
+        "maxHumidity": "Max. Humidity",
+        "minHumidity": "Min. Humidity",
+        "avgLight": "Avg. Light",
+        "maxLight": "Max. Light",
+        "minLight": "Min. Light",
+        "exposureTime": "Exposure Time",
+        "openCount": "Open Count",
+        "avgShock": "Avg. Shock",
+        "maxShock": "Max. Shock",
+        "minShock": "Min. Shock",
+        "violations": "Excursions",
+        "targetRange": "Target Range",
+        "excursionCount": "Excursion Count"
+      },
+      "description": {
+        "temperatureViolation": "Rapid temperature fluctuations observed in\nlast 24h; avg. temperature ({{value}}{{unit}}) exceeded threshold.",
+        "temperatureNormal": "Avg. temperature ({{value}}{{unit}}) remained stable over last 24h,\nbut {{violations}} threshold violations detected.",
+        "temperatureStable": "Avg. temperature ({{value}}{{unit}}) remained stable within threshold over last 24h.",
+        "otherViolation": "Rapid {{label}} fluctuations observed in\nlast 24h; avg. {{label}} ({{value}}{{unit}}) exceeded threshold.",
+        "otherNormal": "Avg. {{label}} ({{value}}{{unit}}) remained stable over last 24h,\nbut {{violations}} threshold violations detected.",
+        "otherStable": "Avg. {{label}} ({{value}}{{unit}}) remained stable within threshold\nover last 24h.",
+        "noData": "No data available for selected period."
+      },
+      "infoCard": {
+        "title": "Rapid temperature fluctuations observed in last 24h; avg. temperature (77.2\u2109) exceeded threshold.",
+        "viewDetails": "View Details"
+      }
+    },
+    "map": {
+      "title": "Route & Location",
+      "subtitle": "Real-time Location",
+      "journeyMap": "Journey Map",
+      "warehouseMap": "Warehouse Map",
+      "fullscreen": "Fullscreen",
+      "inTransit": "In Transit (Sea)",
+      "updated": "Updated {{time}} ago",
+      "currentLocation": "Location",
+      "nearSeattle": "Near Seattle Terminal",
+      "eta": "ETA",
+      "currentTemp": "Temperature",
+      "remainingDistance": "Distance",
+      "shockThreshold": "Shock Threshold Exceeded",
+      "warningBadge": "Warning",
+      "dangerBadge": "Danger",
+      "eventLocation": "Location",
+      "northPacific": "North Pacific Ocean",
+      "measuredValue": "Measured",
+      "duration": "Duration",
+      "durationValue": "3 seconds",
+      "durationValueZero": "0 seconds",
+      "avgSpeed": "Avg Speed",
+      "alertTable": {
+        "status": "Status",
+        "title": "Title",
+        "time": "Time",
+        "location": "Location (Lat/Long)",
+        "eventLocation": "Location of Occurrence",
+        "measuredValue": "Measured Value",
+        "duration": "Duration",
+        "avgSpeed": "Avg Speed",
+        "remove": "Remove",
+        "danger": "Danger",
+        "warning": "Warning",
+        "tempExceeded": "Temperature Threshold Exceeded",
+        "shockExceeded": "Shock Threshold Exceeded",
+        "exceeds30min": "Exceeds 30 min",
+        "duration30min": "30 mins",
+        "duration5min": "5 mins",
+        "shockCount": "Shock Count (1h): 11",
+        "shockCountLabel": "Shock Count (1h)",
+        "shockCountValue": "11 times",
+        "maritimeTransit": "Maritime Transit",
+        "seattleTerminal": "Seattle Terminal",
+        "usInland": "U.S. Inland"
+      }
+    },
+    "activeTasks": {
+      "title": "Active Tasks",
+      "totalTasks": "Total: {{count}} task(s)",
+      "searchPlaceholder": "Search",
+      "description": "{{inTransit}} of {{total}} devices in transit ({{stationary}} stationary). Real-time monitoring active for {{active}} shipment.",
+      "columns": {
+        "select": "Select",
+        "journeyId": "Journey ID",
+        "productName": "Product Name",
+        "client": "Client",
+        "location": "Location",
+        "status": "Status",
+        "eta": "ETA"
+      },
+      "status": {
+        "inTransit": "In Transit"
+      }
+    },
+    "deviceManagement": {
+      "title": "Integrated Device Management",
+      "totalDevices": "Total: {{count}} devices",
+      "all": "All",
+      "critical": "Critical",
+      "warning": "Warning",
+      "normal": "Normal",
+      "searchPlaceholder": "Search",
+      "downloadCsv": "Download CSV",
+      "devicesRequiringAction": "Devices Requiring Action",
+      "summaryDescription": "{{count}} devices in Critical/Warning status. Primary cause: Low Battery. Immediate replacement required to prevent data loss.",
+      "statusBar": {
+        "critical": "Critical",
+        "warning": "Warning",
+        "normal": "Normal"
+      },
+      "alertBox": {
+        "criticalPrefix": "Critical ({{count}}): ",
+        "batteryWarning": "Battery < {{threshold}}%. Replace immediately."
+      },
+      "columns": {
+        "select": "Select",
+        "deviceId": "Device ID",
+        "journeyId": "Journey ID",
+        "status": "Status",
+        "battery": "Battery Status",
+        "lastComm": "Last Communication",
+        "regDate": "Registration Date"
+      }
+    },
+    "journeyTable": {
+      "productName": "High-Value Semicond...",
+      "customer": "TechCore Systems",
+      "currentLocation": "Near Seattle Terminal",
+      "status": "In Transit",
+      "arrivalEstimate": "Arriving in 12d 10h 1m"
+    },
+    "bio": {
+      "kpi": {
+        "temperatureCompliance": {
+          "title": "Temperature Compliance Rate",
+          "subtitle": "Above Target (95%)",
+          "description": "Maintained stability for 99.6% of the journey."
+        },
+        "qualityRetention": {
+          "title": "Product Integrity Score",
+          "subtitle": "Above Target (98%)",
+          "description": "Delivered intact: No damage or contamination."
+        },
+        "onTimeArrival": {
+          "title": "On-Time Performance",
+          "subtitle": "Above Target (90%)",
+          "description": "All cargo arrived 30 mins ahead of schedule."
+        },
+        "eventRate": {
+          "title": "Incident Rate",
+          "subtitle": "Above Target (0%)",
+          "description": "High impact risk despite low frequency."
+        }
+      },
+      "aiInsights": {
+        "cards": {
+          "nightMonitoring": {
+            "title": "Early morning instability detected, revealing a cold chain monitoring blind spot.",
+            "description": "4 consecutive excursions; no immediate response. Urgent upgrade needed for nighttime monitoring."
+          },
+          "usInlandDeviation": {
+            "title": "Temperature excursion in U.S. inland transit; high quality risk to bio-pharma assets.",
+            "description": "Temperature peaked at 48.2°F for 30 mins in U.S. intermodal transit. Immediate quality inspection."
+          },
+          "osongRoute": {
+            "title": "Increased transit time from Osong detected.\nReviewing alternative routes is recommended.",
+            "description": "Historical data & simulations suggest an alternative\nmajor route saves ~1.5 hours and reduces fuel costs."
+          },
+          "icnLaxExcellent": {
+            "title": "ICN–LAX: 100% temp compliance. Consistently high-quality performance.",
+            "description": "History confirms consistent stability. Use this route as a benchmark to optimize high-risk lanes."
+          }
+        }
+      },
+      "alerts": {
+        "items": {
+          "finalDelivery": {
+            "title": "Final Delivery Completed (New York Hospital)",
+            "description": "Cold chain inspection and Proof of Delivery (POD)\nsignature completed."
+          },
+          "coldChainRate": {
+            "title": "99.6% Cold Chain Compliance Achieved",
+            "description": "Temperature remained within range for 99.6% of total\ntransit duration."
+          },
+          "noShockEvent": {
+            "title": "Zero (0) Shock Events Confirmed",
+            "description": "No physical shocks detected across all transit segments;\nstable transport verified."
+          },
+          "usInlandConcentrated": {
+            "title": "Excursions Concentrated in U.S. Inland Segment",
+            "description": "All temperature excursions occurred during U.S. inland\ntransit phase."
+          },
+          "tempNormalRecovery": {
+            "title": "Temperature Returned to Normal Range",
+            "description": "Temperature stabilized. Continued monitoring required."
+          },
+          "tempExceed30min": {
+            "title": "Continuous Temperature Excursion for 30 mins (46.8–48.2°F)",
+            "description": "4 consecutive excursions detected between 04:20–04:50.\nImmediate verification required."
+          },
+          "temp9Detected": {
+            "title": "48.2°F Temperature Detected",
+            "description": "Temperature exceeded allowable range during U.S. inland transit;\nimmediate verification required."
+          },
+          "tempDeviationPersist": {
+            "title": "Persistent Temperature Excursion Detected",
+            "description": "Threshold exceeded for > 30 mins;\nimmediate action required."
+          }
+        }
+      },
+      "environmentTrend": {
+        "description": "Avg. temperature stable at {{value}}{{unit}}\nduring last 24h, but {{violations}} excursions detected."
+      },
+      "activeTasks": {
+        "description": "1 of 5 devices in transit (4 stationary). Real-time monitoring active for 1 shipment."
+      },
+      "deviceManagement": {
+        "description": "9 devices in warning or critical status. Main causes: low battery (<15%) and temperature management issues. Immediate action required to prevent data loss.",
+        "warningMessage": "Critical (3): D-1024 battery below 15%. Replace immediately."
+      },
+      "map": {
+        "currentLocation": "New York Hospital",
+        "warningLocation": "Near New York Hospital",
+        "temperatureAlert": "Temperature Threshold Exceeded",
+        "newYorkHospital": "New York Hospital"
+      },
+      "journeyTable": {
+          "productName": "Biopharmaceuticals",
+          "customer": "Medipharm Global",
+          "currentLocation": "Arrived at New York Hospital",
+          "status": "Completed",
+          "arrivalEstimate": "N/A"
+        }
+    }
+  },
+  "warehouse": {
+    "map": {
+      "loading": "Loading warehouse map...",
+      "error": "An error occurred while loading the warehouse map.",
+      "refresh": "Refresh"
+    }
+  },
+  "journey": {
+    "notFound": "Journey not found.",
+    "status": {
+      "shipping": "In Transit",
+      "completed": "Completed",
+      "pending": "Pending",
+      "delayed": "Delayed"
+    },
+    "bio": {
+      "description": "8-day biopharmaceutical journey successfully completed. A temporary temperature excursion occurred\nduring the U.S. inland segment but was stabilized within tolerance limits. Shipment arrived on schedule."
+    },
+    "timeline": {
+      "departure": "Dep",
+      "arrival": "Arr",
+      "semicon": {
+        "daejeonBusan": "Daejeon – Busan",
+        "busanWarehouse": "Busan Warehouse",
+        "busanSeattle": "Busan – Seattle",
+        "seattleChicago": "Seattle – Chicago",
+        "chicagoIndianapolis": "Chicago – Indianapolis",
+        "vehicleCompleted": "Vehicle transport completed",
+        "gateOutCompleted": "Gate-out completed",
+        "seaInTransit": "Ocean transit in progress",
+        "railScheduled": "Rail transport scheduled",
+        "vehicleScheduled": "Vehicle transport scheduled"
+      },
+      "bio": {
+        "osongToIncheon": "Osong → Incheon",
+        "incheonToLax": "Incheon → LAX",
+        "laxToUsInland": "LAX → US Inland",
+        "usInlandToNy": "US Inland → NY Hospital",
+        "vehicleCompleted": "Vehicle transport completed",
+        "flightCompleted": "Flight transport completed",
+        "inlandCompleted": "Inland transport completed",
+        "finalDelivery": "Final delivery completed",
+        "osongToIncheonAirport": "Osong Bio Cluster - Incheon Airport",
+        "incheonAirportToLax": "Incheon Int'l Airport - LAX",
+        "laxToChicago": "LAX - Chicago",
+        "chicagoToNewYork": "Chicago - New York",
+        "newYorkWarehouseToHospital": "NY Warehouse - NY Hospital",
+        "trainCompleted": "Train transport completed",
+        "truckCompleted": "Truck transport completed"
+      }
+    },
+    "compliance": {
+      "bio": {
+        "gdp": "Verify FDA Number",
+        "coldchain": "Attach CoA",
+        "coa": "Attach MSDS",
+        "tds": "Generate Temp Report",
+        "customs": "Customs Docs Complete"
+      }
+    },
+    "warning": {
+      "location": "Location",
+      "measurement": "Measurement",
+      "duration": "Duration",
+      "avgSpeed": "Average Speed"
+    },
+    "actions": {
+      "share": "Share",
+      "savePdf": "Save PDF"
+    },
+    "info": {
+      "deviceSN": "Device S/N",
+      "transportMode": "Transport Mode",
+      "departureTime": "Departure Time",
+      "arrivalTime": "Arrival Time",
+      "tempThreshold": "Temperature Threshold",
+      "humidityThreshold": "Humidity Threshold",
+      "shockThreshold": "Shock Threshold",
+      "lightThreshold": "Light Threshold"
+    },
+    "summary": {
+      "title": "Active Journeys",
+      "subtitle": "Progress & Leg Status",
+      "arrivingIn": "Arriving at {{location}} in {{time}}.",
+      "time15mins": "15mins.",
+      "eta": "ETA: {{date}}",
+      "etaLabel": "ETA",
+      "onSchedule": "On Schedule",
+      "inProgress": "In Progress",
+      "riskScore": "Risk Score",
+      "avgTemperature": "Avg. Temperature",
+      "avgHumidity": "Avg. Humidity",
+      "eventsDetected": "Events Detected",
+      "viewFullJourney": "View Full Journey",
+      "sectionSummary": "Segment Summary",
+      "bio": {
+        "completed": "Journey Completed",
+        "allCompleted": "All shipping journeys have been completed.",
+        "completedAt": "Delivery Completed",
+        "completedLabel": "Completed"
+      },
+      "sectionTable": {
+        "leg": "Leg",
+        "riskScore": "Risk Score",
+        "elapsedTime": "Total Elapsed Time",
+        "avgTemperature": "Avg. Temperature",
+        "avgHumidity": "Avg. Humidity",
+        "eventsDetected": "Events Detected",
+        "bio": {
+          "leg1": "Osong Bio Cluster – Incheon Airport",
+          "leg2": "Incheon Int'l Airport (ICN) - LAX",
+          "leg3": "LAX - Chicago",
+          "leg4": "Chicago - New York",
+          "leg5": "NY Warehouse - NY Hospital"
+        },
+        "semicon": {
+          "leg1": "Daejeon - Busan",
+          "leg2": "Busan Warehouse",
+          "leg3": "Busan - Seattle",
+          "leg4": "Seattle - Chicago",
+          "leg5": "Chicago - Indianapolis"
+        }
+      }
+    },
+    "map": {
+      "title": "Route & Location",
+      "subtitle": "Real-time Location",
+      "journeyMap": "Journey Map",
+      "warehouseMap": "Warehouse Map",
+      "fullScreen": "Full Screen",
+      "layerDefault": "Default",
+      "layerStandard": "Standard",
+      "layerSatellite": "Satellite",
+      "seaTransit": "Sea Transit ({{id}})",
+      "updatedAgo": "Updated {{time}} ago",
+      "currentLocation": "Current Location",
+      "nextDestination": "Next Destination",
+      "estimatedArrival": "Estimated Arrival",
+      "currentTemperature": "Current Temperature",
+      "currentHumidity": "Current Humidity",
+      "pacificOceanCrossing": "Pacific Ocean Crossing",
+      "distanceRemaining": "Distance Remaining",
+      "downloadCsv": "Download CSV",
+      "bio": {
+        "deliveryComplete": "Delivery Complete",
+        "finalDestination": "Final Destination",
+        "newYorkHospitalCenter": "NY Hospital Logistics Center",
+        "totalDuration": "Total Duration",
+        "totalDurationValue": "8 days 3 hours",
+        "finalTemperature": "Final Temperature"
+      }
+    },
+    "environment": {
+      "title": "Environmental Monitoring",
+      "updatedAgo": "Updated {{time}} ago",
+      "temperature": "Temperature",
+      "humidity": "Humidity",
+      "shock": "Shock",
+      "light": "Light",
+      "avgLabel": "Avg. {{type}}",
+      "maxLabel": "Max. {{type}}",
+      "minLabel": "Min. {{type}}",
+      "settingsRange": "Settings Range",
+      "excursions": "Excursions",
+      "tabs": {
+        "temperature": "Temperature",
+        "humidity": "Humidity",
+        "shock": "Shock",
+        "light": "Light"
+      },
+      "dataStable": "{{type}} data remained stable.",
+      "descriptions": {
+        "temperature": "Unstable Control: Rapid fluctuations detected in last 18h. Avg Temp {{avg}}{{unit}}\n(Above Limit). {{count}} excursions indicate critical instability.",
+        "humidity": "Humidity stable ({{minRange}}–{{maxRange}}%). Moisture ingress prevented. Caution: Potential\ncondensation risk during unloading due to rapid temp/humidity shifts. Inspect\ncargo upon arrival.",
+        "shock": "Shock threshold ({{maxRange}}{{unit}}) exceeded during Seattle unloading. Risk of physical damage.\nDetailed inspection of product exterior & packaging integrity is strongly\nrecommended.",
+        "light": "Single light detection confirmed during Daejeon gate-out (Standard Process).\nNo unauthorized openings detected thereafter. Cargo security maintained throughout transit.",
+        "avgExceeded": "Average {{label}} of {{avg}}{{unit}} exceeded threshold range ({{minRange}}-{{maxRange}}{{unit}}) over the last 18 hours.",
+        "stable": "{{label}} remained stable over the last 18 hours.\nAll readings are within the configured range.",
+        "dataStable": "Data remained stable."
+      },
+      "bio": {
+        "temperature": "Avg Temp {{avg}}{{unit}} (Stable). {{count}} brief excursions detected; quality impact negligible.\nRecommended: Review specific event timestamps to identify recurring patterns.",
+        "humidity": "Humidity remained stable throughout transit, consistently meeting\nrecommended standards with zero excursion events.",
+        "shock": "No shock events occurred. Physical stability of the cargo\nwas fully maintained throughout all segments."
+      }
+    },
+    "devices": {
+      "title": "Device List",
+      "subtitle": "Total {{count}} devices",
+      "description": "Out of {{total}} registered devices, {{inUse}} are in transit, and {{arrived}} have arrived.\nCurrently {{activeCount}} active shipments, and data retrieval is available for arrived devices.",
+      "deviceId": "Device ID",
+      "shippingCount": "Shipments",
+      "status": "Status",
+      "batteryLevel": "Battery Level",
+      "signalStrength": "Signal Strength",
+      "lastCommunication": "Last Comm.",
+      "registeredDate": "Registered",
+      "statusLabels": {
+        "unused": "Unused",
+        "in_use": "In Transit",
+        "stopped": "Stopped",
+        "arrived": "Arrived"
+      },
+      "signalLabels": {
+        "excellent": "Excellent",
+        "good": "Good",
+        "weak": "Weak",
+        "poor": "Poor",
+        "none": "None"
+      }
+    },
+    "events": {
+      "title": "Events & Alarms History",
+      "subtitle": "Total {{count}} events",
+      "time": "Time",
+      "status": "Status",
+      "content": "Content",
+      "manager": "Manager",
+      "attachment": "Attachment",
+      "statusLabels": {
+        "warning": "Warning",
+        "normal": "Normal",
+        "danger": "Danger"
+      },
+      "all": "All"
+    },
+    "documents": {
+      "title": "Document Management",
+      "subtitle": "Total {{count}} documents - Total {{size}}",
+      "upload": "Upload Document",
+      "download": "Download Document",
+      "generateTempReport": "Create Temperature Report",
+      "complianceDescription": "All semiconductor transport compliance requirements met.",
+      "complianceDescriptionBio": "Short-term temperature excursion occurred.\nRelated documents (temp report, TDS) attached.",
+      "name": "Document Name",
+      "type": "Type",
+      "uploadDate": "Upload Date",
+      "uploader": "Uploader",
+      "size": "Size",
+      "version": "Version",
+      "compliance": {
+        "eccn": "ECCN / Export License",
+        "rohs": "RoHS/REACH",
+        "msl": "MSL/Bake",
+        "esd": "ESD",
+        "envLog": "Transit Environmental",
+        "gdp": "GDP Compliance",
+        "coldChain": "Cold Chain Certificate",
+        "coa": "CoA Attached",
+        "compliant": "Compliant"
+      }
+    },
+    "collaboration": {
+      "title": "Collaboration & Notes",
+      "subtitle": "Real-time team communication and file sharing.",
+      "inputPlaceholder": "Communicate and share information with your team in real-time",
+      "addReaction": "Add Reaction",
+      "reply": "Reply",
+      "loadMore": "Load More",
+      "attachFile": "Attach File",
+      "cancel": "Cancel",
+      "post": "Post"
+    },
+    "locations": {
+      "osongSejong": "Osong Sejong Research Complex",
+      "busanPort": "Busan Port",
+      "pacificOcean": "Pacific Ocean",
+      "seattleTerminal": "Seattle Terminal",
+      "indianapolis": "Indianapolis"
+    }
+  }
+}
+

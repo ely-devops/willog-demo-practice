@@ -1,0 +1,130 @@
+/* Auto-generated Design Tokens - DO NOT EDIT MANUALLY */
+/* Generated at: 2026-02-05T08:25:54.597Z */
+
+@theme {
+  /* Font Families */
+  --font-sans: "SUIT Variable", SUIT, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "SUIT Variable", SUIT, sans-serif;
+
+  /* Color - blue */
+  --color-blue-50: #F0F7FF;
+  --color-blue-100: #E1EEFE;
+  --color-blue-200: #BCD9FD;
+  --color-blue-300: #8BB9F9;
+  --color-blue-400: #5494F3;
+  --color-blue-500: #1E6EE1;
+  --color-blue-600: #1858B4;
+  --color-blue-700: #124287;
+  --color-blue-800: #0D2F61;
+  --color-blue-900: #092042;
+  --color-blue-1000: #051225;
+
+  /* Color - red */
+  --color-red-50: #FEF2F2;
+  --color-red-100: #FEE2E2;
+  --color-red-200: #FECACA;
+  --color-red-300: #FCA5A5;
+  --color-red-400: #F87171;
+  --color-red-500: #EF4444;
+  --color-red-600: #DC2D28;
+  --color-red-700: #B91C1C;
+  --color-red-800: #991B1B;
+  --color-red-900: #7F1D1D;
+  --color-red-1000: #450A0A;
+
+  /* Color - orange */
+  --color-orange-50: #FFFBEB;
+  --color-orange-100: #FEF3C7;
+  --color-orange-200: #FDE68A;
+  --color-orange-300: #FCD34D;
+  --color-orange-400: #FBBF24;
+  --color-orange-500: #F59E0B;
+  --color-orange-600: #D97706;
+  --color-orange-700: #B45309;
+  --color-orange-800: #92400E;
+  --color-orange-900: #78350F;
+  --color-orange-1000: #451A03;
+
+  /* Color - green */
+  --color-green-50: #F0FDF4;
+  --color-green-100: #DCFCE7;
+  --color-green-200: #BBF7D0;
+  --color-green-300: #86EFAC;
+  --color-green-400: #4ADE80;
+  --color-green-500: #22C55E;
+  --color-green-600: #16A34A;
+  --color-green-700: #15803D;
+  --color-green-800: #166534;
+  --color-green-900: #14532D;
+  --color-green-1000: #052E16;
+
+  /* Color - gray */
+  --color-gray-50: #f5f5f5;
+  --color-gray-100: #F2F2F4;
+  --color-gray-200: #EBEBEC;
+  --color-gray-300: #DCDCE0;
+  --color-gray-400: #B8B8C0;
+  --color-gray-500: #909097;
+  --color-gray-600: #737680;
+  --color-gray-700: #5D5D65;
+  --color-gray-800: #45454F;
+  --color-gray-900: #222129;
+  --color-gray-1000: #17171C;
+  --color-gray-00: #ffffff;
+
+  --color-transparent: rgba(0,0,0,0);
+  /* Semantic - Background */
+  --bg-primary: #1E6EE1;
+  --bg-error: #EF4444;
+  --bg-primary-tonel: #E1EEFE;
+  --bg-primary-transparent-selected: rgba(30,110,225,0.08);
+  --bg-black-transparent-selected: rgba(23,23,28,0.08);
+
+  /* Semantic - Text (using --fg- prefix to avoid Tailwind v4 text-* collision) */
+  --fg-black: #17171C;
+  --fg-black-disabled: #737680;
+  --fg-primary: #1858B4;
+  --fg-error: #DC2D28;
+  --fg-white: #ffffff;
+  --fg-primary-disabled: #5494F3;
+
+  /* Semantic - Border */
+  --border-gray-active: #B8B8C0;
+  --border-gray-inactive: #DCDCE0;
+
+  /* Semantic - Button */
+  --btn-primary-active: #1E6EE1;
+  --btn-primary-hover: #1858B4;
+  --btn-primary-pressed: #124287;
+
+  /* Semantic - Status */
+  --status-danger-bg-subtle: #FEE2E2;
+  --status-danger-fg: #DC2D28;
+  --status-warning-bg-subtle: #FEF3C7;
+  --status-success-bg-subtle: #DCFCE7;
+
+  /* Border Radius (rem for viewport-responsive scaling) */
+  --radius-0.5: 0.125rem;
+  --radius-1: 0.25rem;
+  --radius-1.5: 0.375rem;
+  --radius-2: 0.5rem;
+  --radius-2.5: 0.625rem;
+  --radius-3: 0.75rem;
+  --radius-4: 1rem;
+  --radius-5: 1.25rem;
+  --radius-6: 1.5rem;
+  --radius-full: 999px;
+
+  /* Spacing (rem for viewport-responsive scaling) */
+  --spacing-0.5: 0.125rem;
+  --spacing-1: 0.25rem;
+  --spacing-1.5: 0.375rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-7: 1.75rem;
+  --spacing-8: 2rem;
+}

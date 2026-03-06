@@ -1,0 +1,277 @@
+/* Font imports must come first */
+@import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css");
+@import "./styles/fonts/gt-america.css";
+@import "./styles/fonts/akkurat-mono.css";
+
+@import "tailwindcss";
+
+/* ============================================
+   Generated Design Tokens (from Figma)
+   - Run `npm run tokens` to regenerate
+   ============================================ */
+@import "./styles/generated/theme.css";
+@import "./styles/generated/utilities.css";
+
+/* ============================================
+   Additional Theme Extensions
+   - Tokens not covered by Figma tokens
+   - Compatibility aliases for existing code
+   ============================================ */
+@theme {
+  /* Primary colors are defined via @utility in utilities.css:
+     - text-primary: #1858B4 (blue-600) - 텍스트용
+     - bg-primary: #1E6EE1 (blue-500) - 배경용
+     Note: --color-primary는 제거됨 (Tailwind 자동 생성 클래스와 @utility 충돌 방지) */
+  --color-primary-transparent: var(--bg-primary-transparent-selected);
+
+  /* Alpha Colors (not in Figma tokens) */
+  --color-alpha-navy-40: rgba(32, 40, 64, 0.4);
+
+  /* Neutral palette aliases (mapped to gray for compatibility) */
+  --color-neutral-900: var(--color-gray-900);
+  --color-neutral-800: var(--color-gray-800);
+  --color-neutral-700: var(--color-gray-700);
+  --color-neutral-600: var(--color-gray-600);
+  --color-neutral-500: var(--color-gray-500);
+  --color-neutral-400: var(--color-gray-400);
+  --color-neutral-300: var(--color-gray-300);
+  --color-neutral-200: var(--color-gray-200);
+  --color-neutral-100: var(--color-gray-100);
+  --color-neutral-50: var(--color-gray-50);
+  --color-neutral-0: var(--color-gray-00);
+}
+
+/* ============================================
+   Base Layer Styles
+   ============================================ */
+@layer base {
+  /* 기본 root font-size: 16px */
+  html {
+    font-size: 16px;
+  }
+
+  /* 1024~1919px: 스케일 다운 (노트북/데스크톱 대응) */
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    html {
+      font-size: calc(16px * (100vw / 1920px));
+      min-height: 0vw; /* Safari 버그 픽스 */
+    }
+  }
+
+  /* 1920px 이상: 스케일 업 */
+  @media (min-width: 1920px) {
+    html {
+      font-size: calc(16px * (100vw / 1920px));
+      min-height: 0vw; /* Safari 버그 픽스 */
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 0.875rem; /* 14px at 16px base - 프로젝트 기본 폰트 크기 */
+    color: var(--fg-black);
+    background-color: var(--color-gray-100);
+  }
+
+  /* Button 요소 폰트 크기 상속 (브라우저 기본 16px 오버라이드) */
+  button {
+    font-size: inherit;
+  }
+
+  /* Recharts 차트 dot hover/click 효과 비활성화 */
+  .recharts-dot,
+  .recharts-dot circle,
+  .recharts-line-dots circle,
+  .recharts-active-dot,
+  .recharts-active-dot circle {
+    pointer-events: none !important;
+    outline: none !important;
+  }
+
+  /* SVG circle 요소 focus 상태 outline 제거 */
+  svg circle:focus,
+  svg circle:focus-visible {
+    outline: none !important;
+  }
+
+  /* Recharts 차트 컨테이너 focus outline 제거 */
+  .recharts-wrapper,
+  .recharts-wrapper svg,
+  .recharts-wrapper svg *,
+  .recharts-surface,
+  .recharts-surface *,
+  svg[role="application"],
+  svg[role="application"] *,
+  svg[role="application"]:focus,
+  svg[role="application"]:focus-visible,
+  svg[role="application"] *:focus,
+  svg[role="application"] *:focus-visible {
+    outline: none !important;
+  }
+}
+
+/* ============================================
+   Custom Utilities (project-specific)
+   ============================================ */
+
+/* Line Heights (Figma 기준) */
+@utility leading-130 {
+  line-height: 1.3;
+}
+@utility leading-170 {
+  line-height: 1.7;
+}
+
+/* ============================================
+   Custom Animations
+   ============================================ */
+
+/* Slide up animation for ChatWindow */
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in animation for Tooltip */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-slide-up {
+  animation: slideUpFadeIn 0.5s ease-out forwards;
+}
+
+@utility animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Simple fade in for backdrop */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 1.0s ease-out forwards;
+}
+
+@utility animate-modal-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Hide scrollbar while allowing scroll */
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================================
+   Sidebar Transition Utilities
+   - Smooth, tension-based easing for LNB collapse/expand
+   ============================================ */
+@utility transition-sidebar {
+  transition-property: width, padding, opacity, transform;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@utility transition-sidebar-content {
+  transition-property: opacity, width;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@utility ease-sidebar {
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/* Fade in block animation for AI assistant response */
+@keyframes fadeInBlock {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-fade-in-block {
+  animation: fadeInBlock 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+/* Pulse ring animation for current position marker on map (Grammarly-inspired) */
+@keyframes pulsing {
+  from {
+    box-shadow: 0 0 0 0 rgba(95, 139, 250, 0.65);
+  }
+  70% {
+    box-shadow: 0 0 0 1.75rem rgba(95, 139, 250, 0);
+  }
+  to {
+    box-shadow: 0 0 0 0 rgba(95, 139, 250, 0);
+  }
+}
+
+@utility animate-pulse-marker {
+  animation: pulsing 2s infinite;
+}
+
+/* ============================================
+   Font Overrides
+   - 영문/숫자는 항상 GT America 사용 (언어 설정과 무관)
+   - 한글은 SUIT Variable로 fallback
+   ============================================ */
+
+/* 폰트 설정:
+   - 영문/숫자: GT America (우선 적용)
+   - 한글: SUIT Variable (fallback)
+   - Monospace: Akkurat Mono (Figma 스펙) */
+:root {
+  --font-sans: "GT America", "SUIT Variable", SUIT, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "GT America", "SUIT Variable", SUIT, sans-serif;
+  --font-mono: "Akkurat Mono", monospace;
+}
+
+/* GT America 사용 시 Medium(500) weight를 Regular(400)로 변경 */
+.text-h1, .text-h2, .text-h3, .text-h4,
+.text-label-l-strong, .text-label-m-strong,
+.text-label-s-strong, .text-label-xs-strong,
+.text-label-xxs-strong,
+.font-medium {
+  font-weight: 400;
+}
+
+/* Akkurat Mono 폰트 descender 잘림 방지
+   - Tailwind의 기본 font-mono를 오버라이드하여 line-height 포함
+   - g, y, p, q, j 등의 하단 잘림 현상 해결
+   - text-sm 등 다른 유틸리티와 함께 사용해도 line-height 유지
+   - !important로 다른 typography 유틸리티의 line-height 덮어쓰기 방지
+   - padding-bottom으로 descender를 위한 추가 공간 확보 */
+@utility font-mono {
+  font-family: var(--font-mono);
+  line-height: 1.5 !important;
+  padding-bottom: 0.125em;
+}

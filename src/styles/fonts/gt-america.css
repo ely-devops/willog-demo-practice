@@ -1,0 +1,30 @@
+/* ============================================
+   GT-America Font Family
+   - 영문/숫자에 사용 (언어 설정과 무관하게 항상 적용)
+   - 한글은 SUIT Variable로 fallback
+   - Standard weight mapping per Figma design tokens
+   ============================================ */
+
+@font-face {
+  font-family: 'GT America';
+  src: url('./GT-America/GT-America-Standard-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular - default text weight per Figma */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('./GT-America/GT-America-Standard-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('./GT-America/GT-America-Standard-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}

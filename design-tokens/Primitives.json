@@ -1,0 +1,598 @@
+{
+  "radius": {
+    "r0_5": {
+      "$type": "borderRadius",
+      "$value": "2"
+    },
+    "r1": {
+      "$type": "borderRadius",
+      "$value": "4"
+    },
+    "r1_5": {
+      "$type": "borderRadius",
+      "$value": "6"
+    },
+    "r2": {
+      "$type": "borderRadius",
+      "$value": "8"
+    },
+    "r2_5": {
+      "$type": "borderRadius",
+      "$value": "10"
+    },
+    "r3": {
+      "$type": "borderRadius",
+      "$value": "12"
+    },
+    "r4": {
+      "$type": "borderRadius",
+      "$value": "16"
+    },
+    "r5": {
+      "$type": "borderRadius",
+      "$value": "20"
+    },
+    "r6": {
+      "$type": "borderRadius",
+      "$value": "24"
+    },
+    "full": {
+      "$type": "borderRadius",
+      "$value": "999"
+    }
+  },
+  "color": {
+    "blue": {
+      "50": {
+        "$type": "color",
+        "$value": "#F0F7FF"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#E1EEFE"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#BCD9FD"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#8BB9F9"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#5494F3"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#1E6EE1"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#1858B4"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#124287"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#0D2F61"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#092042"
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "#051225"
+      }
+    },
+    "red": {
+      "50": {
+        "$type": "color",
+        "$value": "#FEF2F2"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#FEE2E2"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#FECACA"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#FCA5A5"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#F87171"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#EF4444"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#DC2D28"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#B91C1C"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#991B1B"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#7F1D1D"
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "#450A0A"
+      }
+    },
+    "orange": {
+      "50": {
+        "$type": "color",
+        "$value": "#FFFBEB"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#FEF3C7"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#FDE68A"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#FCD34D"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#FBBF24"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#F59E0B"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#D97706"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#B45309"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#92400E"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#78350F"
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "#451A03"
+      }
+    },
+    "green": {
+      "50": {
+        "$type": "color",
+        "$value": "#F0FDF4"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#DCFCE7"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#BBF7D0"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#86EFAC"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#4ADE80"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#22C55E"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#16A34A"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#15803D"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#166534"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#14532D"
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "#052E16"
+      }
+    },
+    "gray": {
+      "50": {
+        "$type": "color",
+        "$value": "#f5f5f5"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#F2F2F4"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#EBEBEC"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#DCDCE0"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#B8B8C0"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#909097",
+        "$description": "icon"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#737680"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#5D5D65"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#45454F"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#222129"
+      },
+      "1000": {
+        "$type": "color",
+        "$value": "#17171C"
+      },
+      "00": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "transparent": {
+      "$type": "color",
+      "$value": "rgba(0,0,0,0)"
+    }
+  },
+  "dimension": {
+    "x0_5": {
+      "$type": "spacing",
+      "$value": "2"
+    },
+    "x1": {
+      "$type": "spacing",
+      "$value": "4"
+    },
+    "x1_5": {
+      "$type": "spacing",
+      "$value": "6"
+    },
+    "x2": {
+      "$type": "spacing",
+      "$value": "8"
+    },
+    "x3": {
+      "$type": "spacing",
+      "$value": "12"
+    },
+    "x4": {
+      "$type": "spacing",
+      "$value": "16"
+    },
+    "x5": {
+      "$type": "spacing",
+      "$value": "20"
+    },
+    "x6": {
+      "$type": "spacing",
+      "$value": "24"
+    },
+    "x7": {
+      "$type": "spacing",
+      "$value": "28"
+    },
+    "x8": {
+      "$type": "spacing",
+      "$value": "32"
+    }
+  },
+  "Display": {
+    "XXL": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "ABC Social Cyrillic Plus Variable Unlicensed Trial",
+        "fontWeight": "Regular",
+        "fontSize": "60",
+        "lineHeight": "100%"
+      }
+    },
+    "XL": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "ABC Social Cyrillic Plus Variable Unlicensed Trial",
+        "fontWeight": "Regular",
+        "fontSize": "48",
+        "lineHeight": "100%"
+      }
+    },
+    "XXXL": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "ABC Social Cyrillic Plus Variable Unlicensed Trial",
+        "fontWeight": "Regular",
+        "fontSize": "72",
+        "lineHeight": "100%"
+      }
+    },
+    "L": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "ABC Social Cyrillic Plus Variable Unlicensed Trial",
+        "fontWeight": "Regular",
+        "fontSize": "32",
+        "lineHeight": "100%"
+      }
+    },
+    "M": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "ABC Social Cyrillic Plus Variable Unlicensed Trial",
+        "fontWeight": "Regular",
+        "fontSize": "24",
+        "lineHeight": "100%"
+      }
+    }
+  },
+  "Title": {
+    "H1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "fontSize": "32",
+        "lineHeight": "130%"
+      },
+      "$description": "Page Title"
+    },
+    "H2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "lineHeight": "130%",
+        "fontSize": "24"
+      },
+      "$description": "Page Title"
+    },
+    "H3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "lineHeight": "130%",
+        "fontSize": "16"
+      },
+      "$description": "Card title"
+    },
+    "H4": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "lineHeight": "130%",
+        "fontSize": "14"
+      },
+      "$description": "Sub"
+    }
+  },
+  "Body": {
+    "L": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "Regular",
+        "fontSize": "16",
+        "lineHeight": "148%"
+      },
+      "$description": "리드 텍스트, 긴 설명글"
+    },
+    "M": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "Regular",
+        "fontSize": "14",
+        "lineHeight": "148%"
+      },
+      "$description": "일반 본문, 테이블 데이터"
+    },
+    "XS": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "Regular",
+        "fontSize": "12",
+        "lineHeight": "148%"
+      },
+      "$description": "Sub"
+    },
+    "S": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "Regular",
+        "fontSize": "13",
+        "lineHeight": "148%"
+      },
+      "$description": "Sub"
+    }
+  },
+  "Mono": {
+    "L": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Akkurat-Mono",
+        "fontWeight": "Regular",
+        "fontSize": "13",
+        "lineHeight": "130%"
+      }
+    },
+    "XL": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Akkurat-Mono",
+        "fontWeight": "{font-weights.400}",
+        "fontSize": "14",
+        "lineHeight": "130%"
+      }
+    },
+    "M": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Akkurat-Mono",
+        "fontWeight": "Regular",
+        "fontSize": "12",
+        "lineHeight": "130%"
+      }
+    },
+    "S": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Akkurat-Mono",
+        "fontWeight": "Regular",
+        "fontSize": "11",
+        "lineHeight": "130%"
+      }
+    }
+  },
+  "Label": {
+    "L": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.400}",
+        "fontSize": "16",
+        "lineHeight": "100%"
+      }
+    },
+    "L Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "fontSize": "16",
+        "lineHeight": "100%"
+      }
+    },
+    "M": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.400}",
+        "fontSize": "14",
+        "lineHeight": "100%"
+      }
+    },
+    "M Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "fontSize": "14",
+        "lineHeight": "100%"
+      }
+    },
+    "S": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.400}",
+        "fontSize": "13",
+        "lineHeight": "100%"
+      }
+    },
+    "S Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "fontSize": "13",
+        "lineHeight": "100%"
+      }
+    },
+    "XS": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "Regular",
+        "fontSize": "12",
+        "lineHeight": "100%"
+      }
+    },
+    "XXS": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "Regular",
+        "fontSize": "11",
+        "lineHeight": "100%"
+      }
+    },
+    "XS Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "fontSize": "12",
+        "lineHeight": "100%"
+      }
+    },
+    "XXS Strong": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "SUIT",
+        "fontWeight": "{font-weights.500}",
+        "fontSize": "11",
+        "lineHeight": "100%"
+      }
+    }
+  },
+  "font-weights": {
+    "400": {
+      "$type": "fontWeights",
+      "$value": "400"
+    },
+    "500": {
+      "$type": "fontWeights",
+      "$value": "500"
+    }
+  }
+}

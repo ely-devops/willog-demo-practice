@@ -1,0 +1,13 @@
+/* ============================================
+   Akkurat-Mono Font Family
+   - Used for monospace text (badges, codes, IDs)
+   - Matches Figma design spec for badge percentages
+   ============================================ */
+
+@font-face {
+  font-family: 'Akkurat Mono';
+  src: url('./Akkurat-Mono/AkkuratMonoLLTT-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}

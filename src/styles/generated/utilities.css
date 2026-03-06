@@ -1,0 +1,281 @@
+/* Auto-generated Typography & Semantic Utilities - DO NOT EDIT MANUALLY */
+/* Generated at: 2026-02-05T08:25:54.597Z */
+
+/* Typography - Headings (rem for viewport-responsive scaling) */
+@utility text-h1 {
+  font-family: var(--font-sans);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+@utility text-h2 {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+@utility text-h3 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+@utility text-h4 {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* Typography - Body (rem for viewport-responsive scaling) */
+@utility text-body-l {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.48;
+}
+
+@utility text-body-m {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.48;
+}
+
+@utility text-body-xs {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.48;
+}
+
+@utility text-body-s {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.48;
+}
+
+/* Typography - Labels (rem for viewport-responsive scaling) */
+@utility text-label-l {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-label-l-strong {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@utility text-label-m {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-label-m-strong {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@utility text-label-s {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-label-s-strong {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@utility text-label-xs {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-label-xxs {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-label-xs-strong {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+@utility text-label-xxs-strong {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Typography - Mono (rem for viewport-responsive scaling) */
+@utility text-mono-l {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@utility text-mono-xl {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@utility text-mono-m {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@utility text-mono-s {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Typography - Display (rem for viewport-responsive scaling) */
+@utility text-display-xxl {
+  font-family: var(--font-display);
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-display-xl {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-display-xxxl {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-display-l {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@utility text-display-m {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Semantic Colors - Text */
+@utility text-black {
+  color: var(--fg-black);
+}
+
+@utility text-black-disabled {
+  color: var(--fg-black-disabled);
+}
+
+@utility text-primary {
+  color: var(--fg-primary);
+}
+
+@utility text-error {
+  color: var(--fg-error);
+}
+
+@utility text-white {
+  color: var(--fg-white);
+}
+
+@utility text-primary-disabled {
+  color: var(--fg-primary-disabled);
+}
+
+/* Semantic Colors - Background */
+@utility bg-primary {
+  background-color: var(--bg-primary);
+}
+
+@utility bg-error {
+  background-color: var(--bg-error);
+}
+
+@utility bg-primary-tonel {
+  background-color: var(--bg-primary-tonel);
+}
+
+@utility bg-primary-transparent-selected {
+  background-color: var(--bg-primary-transparent-selected);
+}
+
+@utility bg-black-transparent-selected {
+  background-color: var(--bg-black-transparent-selected);
+}
+
+/* Semantic Colors - Border */
+@utility border-gray-active {
+  border-color: var(--border-gray-active);
+}
+
+@utility border-gray-inactive {
+  border-color: var(--border-gray-inactive);
+}
+
+/* Semantic Colors - Button */
+@utility btn-primary-active {
+  background-color: var(--btn-primary-active);
+}
+
+@utility btn-primary-hover {
+  background-color: var(--btn-primary-hover);
+}
+
+@utility btn-primary-pressed {
+  background-color: var(--btn-primary-pressed);
+}
+
+/* Semantic Colors - Status */
+@utility bg-status-danger-subtle {
+  background-color: var(--status-danger-bg-subtle);
+}
+
+@utility text-status-danger {
+  color: var(--status-danger-fg);
+}
+
+@utility bg-status-warning-subtle {
+  background-color: var(--status-warning-bg-subtle);
+}
+
+@utility bg-status-success-subtle {
+  background-color: var(--status-success-bg-subtle);
+}

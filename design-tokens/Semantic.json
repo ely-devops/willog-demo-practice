@@ -1,0 +1,126 @@
+{
+  "background": {
+    "primary": {
+      "$type": "color",
+      "$value": "{color.blue.500}"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "{color.red.500}"
+    },
+    "primary-tonel": {
+      "$type": "color",
+      "$value": "{color.blue.100}"
+    },
+    "primary-transparent-selected": {
+      "$type": "color",
+      "$value": "rgba(30,110,225,0.08)"
+    },
+    "black-transparent-selected": {
+      "$type": "color",
+      "$value": "rgba(23,23,28,0.08)"
+    }
+  },
+  "Background": {
+    "transparent": {
+      "$type": "opacity",
+      "$value": "0"
+    }
+  },
+  "text": {
+    "black": {
+      "$type": "color",
+      "$value": "{color.gray.1000}"
+    },
+    "black-disabled": {
+      "$type": "color",
+      "$value": "{color.gray.600}"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "{color.blue.600}"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "{color.red.600}"
+    },
+    "white": {
+      "$type": "color",
+      "$value": "{color.gray.00}"
+    },
+    "primary-disabled": {
+      "$type": "color",
+      "$value": "{color.blue.400}"
+    }
+  },
+  "border": {
+    "border-gray-active": {
+      "$type": "color",
+      "$value": "{color.gray.400}"
+    },
+    "border-gray-inactive": {
+      "$type": "color",
+      "$value": "{color.gray.300}"
+    }
+  },
+  "button": {
+    "primary": {
+      "active-500": {
+        "$type": "color",
+        "$value": "{color.blue.500}"
+      },
+      "hover-600": {
+        "$type": "color",
+        "$value": "{color.blue.600}"
+      },
+      "pressed-700": {
+        "$type": "color",
+        "$value": "{color.blue.700}"
+      }
+    }
+  },
+  "divider": {
+    "gray-300": {
+      "$type": "border",
+      "$value": {
+        "color": "{color.gray.400}",
+        "width": "1",
+        "style": "solid"
+      }
+    }
+  },
+  "status": {
+    "danger": {
+      "bg": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.red.100}",
+          "$description": "연한 빨강 배경 (태그용)"
+        }
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{text.error}",
+        "$description": "진한 빨강 글씨 (태그 텍스트, 아이콘용)"
+      }
+    },
+    "warning": {
+      "bg": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.orange.100}",
+          "$description": "연한 주황 배경 (태그용)"
+        }
+      }
+    },
+    "success": {
+      "bg": {
+        "subtle": {
+          "$type": "color",
+          "$value": "{color.green.100}",
+          "$description": "연한 녹색 배경 (태그용)"
+        }
+      }
+    }
+  }
+}
