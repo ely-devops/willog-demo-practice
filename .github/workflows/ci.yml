@@ -3,6 +3,12 @@ name: CI - Build & Push to ECR
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   id-token: write
@@ -13,7 +19,7 @@ env:
   ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
 
 jobs:
-  build-and-push:
+  lint-and-typecheck:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,11 +29,16 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
+      - run: npm run lint
+      - run: npx tsc -b
 
-      - name: Lint
-        run: npm run lint
+  build-and-push:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: lint-and-typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
@@ -42,9 +53,10 @@ jobs:
       - name: Set image tag
         id: meta
         run: |
-          SHA=$(echo "${{ github.sha }}" | cut -c1-7)
-          echo "image=${{ steps.ecr-login.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${SHA}" >> "$GITHUB_OUTPUT"
-          echo "latest=${{ steps.ecr-login.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest" >> "$GITHUB_OUTPUT"
+          TAG=$(echo "${{ github.sha }}" | cut -c1-7)
+          REGISTRY=${{ steps.ecr-login.outputs.registry }}
+          echo "image=${REGISTRY}/${ECR_REPOSITORY}:${TAG}" >> "$GITHUB_OUTPUT"
+          echo "latest=${REGISTRY}/${ECR_REPOSITORY}:latest" >> "$GITHUB_OUTPUT"
 
       - uses: docker/setup-buildx-action@v3
 
