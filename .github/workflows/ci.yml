@@ -7,8 +7,13 @@ on:
     branches: [main]
   workflow_dispatch:
     inputs:
+      push_image:
+        description: "ECR에 이미지 푸시"
+        required: true
+        type: boolean
+        default: true
       auto_deploy:
-        description: "자동 배포 여부 (ECR push → ArgoCD 자동 배포)"
+        description: "ArgoCD 자동 배포 (latest 태그 포함, push_image 필요)"
         required: true
         type: boolean
         default: true
@@ -64,36 +69,40 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Configure AWS credentials (OIDC)
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.auto_deploy == true)
+        if: github.event_name == 'push' || inputs.push_image == true
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Login to Amazon ECR
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.auto_deploy == true)
+        if: github.event_name == 'push' || inputs.push_image == true
         id: ecr-login
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Set image tag
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.auto_deploy == true)
+      - name: Set image tags
+        if: github.event_name == 'push' || inputs.push_image == true
         id: meta
         run: |
           TAG=$(echo "${{ github.sha }}" | cut -c1-7)
           REGISTRY=${{ steps.ecr-login.outputs.registry }}
-          echo "image=${REGISTRY}/${ECR_REPOSITORY}:${TAG}" >> "$GITHUB_OUTPUT"
-          echo "latest=${REGISTRY}/${ECR_REPOSITORY}:latest" >> "$GITHUB_OUTPUT"
+          TAGS="${REGISTRY}/${ECR_REPOSITORY}:${TAG}"
+          if [[ "${{ github.event_name }}" == "push" ]] || [[ "${{ inputs.auto_deploy }}" == "true" ]]; then
+            TAGS="${TAGS}
+          ${REGISTRY}/${ECR_REPOSITORY}:latest"
+          fi
+          echo "tags<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$TAGS" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
 
       - name: Push to ECR
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.auto_deploy == true)
+        if: github.event_name == 'push' || inputs.push_image == true
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
           platforms: linux/arm64
-          tags: |
-            ${{ steps.meta.outputs.image }}
-            ${{ steps.meta.outputs.latest }}
+          tags: ${{ steps.meta.outputs.tags }}
           build-args: |
             VITE_MAPBOX_TOKEN=${{ secrets.VITE_MAPBOX_TOKEN }}
             VITE_MAPBOX_STYLE=${{ secrets.VITE_MAPBOX_STYLE }}
