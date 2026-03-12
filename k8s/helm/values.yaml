@@ -3,7 +3,7 @@ replicas: 1
 
 # -- Image configuration
 image:
-  repository: 416849462746.dkr.ecr.ap-northeast-2.amazonaws.com/prod-willog-demo-ecr
+  name: 416849462746.dkr.ecr.ap-northeast-2.amazonaws.com/prod-willog-demo-ecr
   tag: latest
   pullPolicy: Always
 

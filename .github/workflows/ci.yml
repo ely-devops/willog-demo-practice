@@ -5,6 +5,13 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      auto_deploy:
+        description: "자동 배포 여부 (ECR push → ArgoCD 자동 배포)"
+        required: true
+        type: boolean
+        default: true
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -34,7 +41,9 @@ jobs:
       - run: npx tsc -b
 
   build:
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: |
+      (github.ref == 'refs/heads/main' && github.event_name == 'push') ||
+      github.event_name == 'workflow_dispatch'
     needs: lint-and-typecheck
     runs-on: ubuntu-latest
     steps:
@@ -55,6 +64,9 @@ jobs:
           cache-to: type=gha,mode=max
 
   push:
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' && inputs.auto_deploy == true)
     needs: build
     runs-on: ubuntu-latest
     steps:
